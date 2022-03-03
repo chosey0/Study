@@ -10,18 +10,34 @@
 
   <body>
     <header>
-      <form aria-label="Header_form">
-        <div aria-label="Logo">
-          <h1>
-            <a href="">로고</a>
-          </h1>
+      <div aria-label="Logo">
+        <h1>
+          <a href="">로고</a>
+        </h1>
+      </div>
+      <div aria-label="menu_list">
+        <div aria-label="menu">
+          <a href="">꽃집 찾기</a>
+          <div aria-label="find_way">
+            <div aria-label="map"><a href="">지도로 찾기</a></div>
+            <div aria-label="address"><a href="">주소로 찾기</a></div>
+          </div>
         </div>
-        <div aria-label="Search_box">
+        <div><a href="">예약</a></div>
+        <div><a href="">플로리스트</a></div>
+        <div><a href="">로그인</a></div>
+      </div>
+    </header>
+    <div aria-label="search_container">
+      <div>Slogun</div>
+      <div>지금까지 꽃 선물 한 카운트</div>
+      <form aria-label="search_form">
+        <div aria-label="search_box">
           <label for="search">
             <svg
               width="50"
               height="50"
-              aria-label="Search_icon"
+              aria-label="search_icon"
               viewBox="0 0 25 25"
             >
               <g stroke="currentColor" stroke-width="1.5" fill="none">
@@ -41,13 +57,14 @@
           <button type="reset" aria-label="Search_close">닫기</button>
         </div>
       </form>
-    </header>
-
+    </div>
     <nav aria-label="category">
       <div aria-label="category_menu">
         <button>상황</button>
         <button>색상</button>
         <button>꽃말</button>
+        <!-- 화환, 화분, 꽃다발 -->
+        <button>유형</button>
       </div>
       <div class="category_item" aria-label="category_item">
         <!-- ? Using template Element -->
@@ -57,6 +74,9 @@
           </div>
         </a>
         <!-- ? -->
+        <div>
+          <button>모든 꽃 보기</button>
+        </div>
       </div>
     </nav>
 
