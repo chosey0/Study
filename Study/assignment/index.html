@@ -1,39 +1,70 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/css/index.css">
-</head>
-<body>
-  <header>
-    <div aria-label="Header_box">
-      <div aria-label="Logo">
-
-      </div>
-      <div aria-label="Search_box">
-        <svg aria-label="Search_icon">
-        </svg>
-        <div aria-label="Search_bar">
-
+  <body>
+    <header>
+      <form aria-label="Header_form">
+        <div aria-label="Logo">
+          <h1>
+            <a href="">로고</a>
+          </h1>
         </div>
-        <button aria-label="Search_close">
+        <div aria-label="Search_box">
+          <label for="search">
+            <svg
+              width="50"
+              height="50"
+              aria-label="Search_icon"
+              viewBox="0 0 25 25"
+            >
+              <g stroke="currentColor" stroke-width="1.5" fill="none">
+                <circle cx="10" cy="10" r="6"></circle>
+                <path d="M16,16 L22,22"></path>
+              </g>
+            </svg>
+          </label>
+          <div aria-label="Search_bar">
+            <input
+              id="search"
+              name="search"
+              type="text"
+              aria-label="Search_input"
+            />
+          </div>
+          <button type="reset" aria-label="Search_close">닫기</button>
+        </div>
+      </form>
+    </header>
 
-        </button>
+    <nav aria-label="category">
+      <div>
+        <button></button>
       </div>
-    </div>
-  </header>
+      <div class="category_item" aria-label="category_item">
+        <a class="category_product" href="">
+          <div class="category_icon" aria-label="category_icon">
+            <h3>목적</h3>
+          </div>
+        </a>
+      </div>
+    </nav>
+    <div></div>
+    <main>
+      <div class="product" aria-label="flower">
+        상자
+        <div class="hide" aria-label="hide_link">
+          <a href="">link</a>
+        </div>
+      </div>
+    </main>
 
-  <main>
-
-  </main>
-
-  <footer>
-
-  </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
