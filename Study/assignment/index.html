@@ -44,27 +44,33 @@
     </header>
 
     <nav aria-label="category">
-      <div>
-        <button></button>
+      <div aria-label="category_menu">
+        <button>상황</button>
+        <button>색상</button>
+        <button>꽃말</button>
       </div>
       <div class="category_item" aria-label="category_item">
+        <!-- ? Using template Element -->
         <a class="category_product" href="">
           <div class="category_icon" aria-label="category_icon">
             <h3>목적</h3>
           </div>
         </a>
+        <!-- ? -->
       </div>
     </nav>
-    <div></div>
-    <main>
-      <div class="product" aria-label="flower">
-        상자
-        <div class="hide" aria-label="hide_link">
-          <a href="">link</a>
-        </div>
-      </div>
-    </main>
 
+    <main></main>
+
+    <template>
+      <div class="category_item" aria-label="category_item">
+        <a class="category_product" href="">
+          <div class="category_icon" aria-label="category_icon">
+            <h3></h3>
+          </div>
+        </a>
+      </div>
+    </template>
     <footer></footer>
   </body>
 </html>
