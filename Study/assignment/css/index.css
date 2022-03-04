@@ -6,7 +6,9 @@
   font: inherit;
   color: inherit;
   flex-shrink: 0;
-
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5em;
   --vivid-yellow: (255, 227, 2);
   --vivid-purple: (102, 68, 204);
 
@@ -123,7 +125,57 @@ button:disabled {
   border: 0;
   padding: 0;
 }
+a {
+  display: block;
+  width: 100%;
+}
 
+/* 
+  * 헤더
+*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 80px;
+}
+header:hover {
+  height: 180px;
+}
+.header a {
+  line-height: 80px;
+}
+.header .menu_list,
+.menu_item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu_item {
+  width: 100px;
+}
+
+.find {
+  display: flex;
+  flex-wrap: wrap;
+}
+.find_way {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+}
+.find_way a {
+  line-height: 40px;
+}
+.hide {
+  display: none;
+}
 /* 
   * 카테고리 
 */
