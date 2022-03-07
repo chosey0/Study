@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link rel="stylesheet" href="/css/blog.css" />
+    <script src="/index.js" defer></script>
   </head>
+
   <body>
     <div class="background" aria-label="background">
       <!-- flex_box -->
@@ -14,37 +16,53 @@
         <!-- flex_box -->
         <div class="header" aria-label="header">
           <div class="name_link" aria-label="name_link">
-            <a href="" class="name" aria-label="name">
+            <a href="" class="nav_list" aria-label="name">
               <h1>Chosey</h1>
             </a>
           </div>
           <!-- flex_box -->
           <div class="nav" aria-label="nav">
-            <div class="menu_list" aria-label="nav_list">
-              <a href="">Introduction</a>
-            </div>
-            <div class="nav_list" aria-label="nav_list">
-              <a href="">About Me</a>
-            </div>
-            <div class="nav_list" aria-label="nav_list">
-              <a href="">My Portfolio</a>
-            </div>
-            <div class="nav_list" aria-label="nav_list">
-              <a href="">Contact Me</a>
-            </div>
+            <a id="introduce" href="" class="nav_list">Introduction</a>
+
+            <a href="" class="nav_list">About Me</a>
+
+            <a href="" class="nav_list">My Portfolio</a>
+
+            <a href="" class="nav_list">Contact Me</a>
           </div>
-          <!-- flex_box -->
-          <div class="main" aria-label="main">
+        </div>
+        <!-- flex_box -->
+        <div id="main" class="main_container" aria-label="main">
+          <template id="content_template">
             <!-- flex_box -->
-            <div class="text_box"></div>
-            <!-- flex_box -->
-            <div class="vector_box">
-              <figure>
-                <img src="" alt="" />
-                <figcaption></figcaption>
-              </figure>
+            <div class="content_box">
+              <div class="content text_box">
+                <div class="intro">
+                  <p class="intro_text">
+                    Hello, <br />
+                    This is <b>Choi seoggyu</b> <br />
+                    Computer engineering department student<br />
+                    in Woouk university
+                  </p>
+                  <p class="branch">HTML</p>
+                  <p class="branch">CSS</p>
+                  <p class="branch">JavaScript</p>
+                  <div class="hire_box">
+                    <a href="">Hire me</a>
+
+                    <a href="">See my Works</a>
+                  </div>
+                </div>
+              </div>
+              <!-- flex_box -->
+              <div class="content vector_box">
+                <figure>
+                  <img src="/img/user-1633249.svg" alt="" />
+                  <figcaption></figcaption>
+                </figure>
+              </div>
             </div>
-          </div>
+          </template>
         </div>
       </div>
     </div>
