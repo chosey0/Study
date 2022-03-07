@@ -8,6 +8,7 @@
   flex-shrink: 0;
   font-weight: 300;
   text-align: center;
+  text-align: center;
   line-height: 1.5em;
   --vivid-yellow: (255, 227, 2);
   --vivid-purple: (102, 68, 204);
@@ -33,6 +34,8 @@
   --vivid-red-light: (253, 64, 132);
 
   --vivid-brown: (204, 102, 68);
+  --primary-white: (255, 255, 255);
+  --primary-black: (0, 0, 0);
 }
 /* todo apple.reset.css */
 html {
@@ -133,20 +136,26 @@ a {
 /* 
   * 헤더
 */
-.header {
+
+header {
+  max-height: 240px;
+}
+
+.header_top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100vw;
   height: 80px;
+  background: none;
 }
-header:hover {
-  height: 180px;
-}
-.header a {
+.header_top a {
   line-height: 80px;
 }
-.header .menu_list,
+.header_top .logo {
+  width: 100px;
+}
+.header_top .menu_list,
 .menu_item {
   height: 100%;
   display: flex;
@@ -161,20 +170,52 @@ header:hover {
   display: flex;
   flex-wrap: wrap;
 }
-.find_way {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 80px;
-}
-.find_way a {
+.find_width a {
   line-height: 40px;
 }
-.hide {
+.header_bottom {
+  width: 100vw;
+  height: 160px;
   display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.header_bottom .contact_width,
+.header_bottom .find_width {
+  width: 50vw;
+  height: 160px;
+  display: flex;
+}
+.header_bottom .contact_width {
+  flex-wrap: wrap;
+}
+.header_bottom .contact_width .contact_box,
+.header_bottom .contact_width .contact_box div {
+  width: 100%;
+}
+.header_bottom .contact_width .contact_box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header_bottom .contact_width .contact_box div {
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+}
+.header_bottom .find_width a {
+  width: 100px;
+  margin: 0 0 0 50px;
+}
+.find_box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 80px;
+}
+.show {
+  display: flex;
 }
 /* 
   * 카테고리 
