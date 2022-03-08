@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+  font-weight: 200;
+  line-height: 1.5em;
+  flex-wrap: wrap;
+  --vivid-yellow: 255, 227, 2;
+  --vivid-purple: 102, 68, 204;
+
+  --vivid-violet: 157, 0, 254;
+  --vivid-violet-light: 170, 68, 204;
+
+  --vivid-phlox: 236, 0, 252;
+
+  --vivid-blue: 0, 164, 239;
+  --vivid-blue-light: 0, 173, 242;
+
+  --vivid-malachite: 0, 207, 53;
+
+  --vivid-green: 68, 204, 102;
+  --vivid-green-deep: 106, 180, 62;
+  --vivid-green-light: 170, 204, 68;
+
+  --vivid-orange: 254, 96, 6;
+  --vivid-orange-light: 232, 157, 65;
+
+  --vivid-red: 249, 13, 27;
+  --vivid-red-light: 253, 64, 132;
+
+  --vivid-brown: 204, 102, 68;
+  --primary-white: 255, 255, 255;
+  --primary-black: 0, 0, 0;
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+  background: url(/img/밤하늘.svg) no-repeat;
+  background-size: cover;
+}
+.moon {
+  padding: 2em;
+  width: 15vw;
+  height: 15vw;
+
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  background: url(/img/달_3보름.svg) no-repeat;
+  background-size: cover;
+}
+.star1 {
+  width: 100vw;
+  background: url(/img/밤하늘별2.svg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  height: 60%;
+}
+.mountain {
+  width: 100vw;
+  background: url(/img/밤산.svg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  height: 60%;
+}
+#star1 {
+  position: absolute;
+  left: 90%;
+  transform: translate3d(-100vw, 100vh, 10vw) scale(0.5);
+  transition: 3s infinity;
+}
+#star2 {
+  position: absolute;
+  left: 70%;
+  transform: translate3d(-100vw, 70vh, 10vw);
+  transition: 1s;
+}
+#star3 {
+  position: absolute;
+  left: 90%;
+  transform: translate3d(-100vw, 70vh, 10vw) scale(0.5);
+  transition: 2s;
+}
