@@ -44,14 +44,43 @@ function value_inspect(n) {
     if (-100 < check_value || check_value === undefined) {
       check_value = undefined;
       check_value = random_value(n);
-    } else {
+    } else if (check_value < -100 || check_value !== undefined) {
       check_value == true;
+    } else if (check_value > 0) {
+      return 0;
     }
     // * -100보다 작을때까지 반복
   } while (check_value > -100);
   console.log(check_value);
   return check_value;
 }
+// todo 위의 방법으로는 별똥별 element가 보여지는 공간 외에 차지하는 공간이 생겨서 흰색 빈칸들이 생김
+
+// todo 시간에 따른 좌표값 변화
+let time = new Date();
+let hour = time.getHours();
+let min = time.getMinutes();
+let sec = time.getSeconds();
+let msec = time.getMilliseconds();
+console.log(hour);
+let morning;
+let afternoon;
+let evening;
+let night;
+let dawn;
+
+// todo 시간에 따른 랜덤 값 추출
+function time_radom_value() {
+  let time = new Date();
+  let hour = time.getHours();
+  let min = time.getMinutes();
+  let sec = time.getSeconds();
+  let msec = time.getMilliseconds();
+  let coordinate = msec * Math.floor(Math.random() * 5);
+  console.log(coordinate);
+  console.log(-msec / 3);
+}
+time_radom_value();
 
 function shooting_star() {
   let star_array = document.querySelectorAll(".star");
@@ -59,7 +88,10 @@ function shooting_star() {
     element.animate(
       [
         {
-          transform: `translate(${value_inspect(-300)}vw,100vh) rotate(-35deg)`,
+          transform: `translate(${value_inspect(
+            -300
+          )}vw,100vh) rotate(-35deg) scale(1)`,
+          // transform: `translate(${-msec / 3}vw,100vh) rotate(-35deg)`,
         },
       ],
       {
