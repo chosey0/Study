@@ -73,19 +73,24 @@
 }
 #star1 {
   position: absolute;
-  left: 90%;
-  transform: translate3d(-100vw, 100vh, 10vw) scale(0.5);
-  transition: 3s infinity;
+  right: -15vw;
 }
 #star2 {
   position: absolute;
-  left: 70%;
-  transform: translate3d(-100vw, 70vh, 10vw);
-  transition: 1s;
+  right: -15vw;
 }
 #star3 {
   position: absolute;
-  left: 90%;
-  transform: translate3d(-100vw, 70vh, 10vw) scale(0.5);
-  transition: 2s;
+  right: -15vw;
+  /* animation: star 4s infinite; */
+  /* transform: translate3d(-100vw, 70vh, 10vw) scale(0.5);
+  transition: 2s; */
+}
+@keyframes star {
+  from {
+    transform: translate(0, -10vh) rotate(-35deg);
+  }
+  to {
+    transform: translate(-96vw, 54vh) rotate(-35deg);
+  }
 }
