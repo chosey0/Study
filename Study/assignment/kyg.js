@@ -55,6 +55,7 @@ function value_inspect(n) {
   return check_value;
 }
 // todo 위의 방법으로는 별똥별 element가 보여지는 공간 외에 차지하는 공간이 생겨서 흰색 빈칸들이 생김
+// todo transform 말고 absolute 위치값 변화로 ?
 
 // todo 시간에 따른 좌표값 변화
 let time = new Date();
@@ -88,6 +89,8 @@ function shooting_star() {
     element.animate(
       [
         {
+          // ! 트랜스폼으로 좌표값을 바꾸는게 아니라 그냥 앱솔루트 위치를 바꿔야할거같음
+          // ! 아 그냥 inspect return값을 0부터 -100 사이로 하면되는거 아닌가
           transform: `translate(${value_inspect(
             -300
           )}vw,100vh) rotate(-35deg) scale(1)`,
@@ -102,5 +105,13 @@ function shooting_star() {
   });
 }
 
+function shooting_star2() {
+  let star_array = document.querySelectorAll(".star");
+  star_array.forEach((element) => {
+    element.setAttribute("style", "top:-100vw");
+    console.log(element.getAttribute("style"));
+  });
+}
+// shooting_star2();
 shooting_star();
 // star_moving();

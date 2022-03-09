@@ -35,11 +35,15 @@
   --primary-white: 255, 255, 255;
   --primary-black: 0, 0, 0;
 }
+body {
+  display: flex;
+  position: relative;
+}
 .background {
   width: 100vw;
   height: 100vh;
 
-  position: relative;
+  position: inherit;
   background: url(/img/밤하늘.svg) no-repeat;
   background-size: cover;
 }
@@ -54,16 +58,13 @@
   background: url(/img/달_3보름.svg) no-repeat;
   background-size: cover;
 }
-body {
-  display: flex;
-}
 .star1 {
   width: 100vw;
   background: url(/img/밤하늘별2.svg) repeat;
   background-size: cover;
   position: absolute;
   top: 0;
-  height: 50vh;
+  height: 30vw;
 }
 .mountain {
   width: 100vw;
@@ -75,28 +76,20 @@ body {
   height: 30vw;
 }
 .star {
-  transform: scale(0);
+  transition: 1;
 }
 #star1 {
   position: absolute;
-  /* right: 0vw; */
+  right: 0vw;
 }
 #star2 {
   position: absolute;
-  /* right: 0vw; */
+  right: 0vw;
 }
 #star3 {
   position: absolute;
-  /* right: 0vw; */
+  right: 0vw;
   /* animation: star 4s infinite; */
   /* transform: translate3d(-100vw, 70vh, 10vw) scale(0.5);
   transition: 2s; */
-}
-@keyframes star {
-  from {
-    transform: translate(0, -10vh) rotate(-35deg);
-  }
-  to {
-    transform: translate(-96vw, 54vh) rotate(-35deg);
-  }
 }
