@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+div,
+form {
+  height: fit-content;
+}
+.logo {
+  width: 100%;
+  height: fit-content;
+}
+.box {
+  width: 100%;
+  height: fit-content;
+}
