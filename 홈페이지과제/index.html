@@ -9,33 +9,48 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="logo">
-        <a href="">로고</a>
-      </div>
-      <form class="form" action="">
-        <div class="login_width">
-          <div class="login_box">
-            <label for="id">ID</label>
-            <input id="id" type="text" class="id" />
+    <div class="container_size">
+      <div class="container">
+        <form class="form" action="">
+          <div class="logo">
+            <a href="">로고</a>
           </div>
-          <div class="login_box">
-            <label for="password">PW</label>
-            <input id="password" type="text" class="password" />
+          <div class="login_width">
+            <div class="login_box">
+              <label for="id">ID</label>
+              <input
+                id="id"
+                type="text"
+                class="id"
+                placeholder="아이디를 입력해주세요."
+                required
+              />
+            </div>
+            <div class="login_box">
+              <label for="password">PW</label>
+              <input
+                id="password"
+                type="text"
+                class="password"
+                placeholder="비밀번호를 입력해주세요."
+                required
+              />
+            </div>
+            <div class="etc">
+              <input type="checkbox" name="keep" id="keep" />
+              <label for="keep">로그인 상태 유지</label>
+            </div>
+            <div class="btn_box">
+              <button id="submit" type="submit">로그인</button>
+            </div>
           </div>
-          <div class="etc">
-            <input type="checkbox" name="" id="" />
-          </div>
-          <div class="btn_box">
-            <button id="submit">로그인</button>
-          </div>
-        </div>
-      </form>
 
-      <div class="sign_box">
-        <a href="">비밀번호 찾기</a>
-        <a href="">아이디 찾기</a>
-        <a href="">회원가입</a>
+          <div class="sign_box">
+            <a href="">비밀번호 찾기</a>
+            <a href="">아이디 찾기</a>
+            <a href="">회원가입</a>
+          </div>
+        </form>
       </div>
     </div>
     <footer></footer>

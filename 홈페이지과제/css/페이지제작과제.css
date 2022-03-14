@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
 * {
   box-sizing: border-box;
   font: inherit;
+  font-family: inherit;
   color: inherit;
   margin: 0;
   padding: 0;
@@ -34,13 +37,16 @@
   --primary-white: 255, 255, 255;
   --primary-black: 0, 0, 0;
 }
-body {
+.container_size {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
+  font-family: "Noto Sans KR", sans-serif;
+  background: url(/img/Background\ 18.svg) center no-repeat;
+  background-size: cover;
 }
 div,
 form {
@@ -51,7 +57,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
+  color: white;
   padding: 1.5em;
 }
 .logo,
@@ -62,15 +68,25 @@ form {
 .etc,
 .sign_box {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   height: fit-content;
 }
 .form {
+  max-width: 100%;
   padding: 1.5em;
   border: 1px solid black;
   border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
 .login_box {
   display: flex;
   flex-wrap: wrap;
@@ -82,15 +98,50 @@ form {
   width: 90%;
 }
 .btn_box button {
-  width: 100%;
+  width: 80%;
 }
 .sign_box {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 5em;
 }
 
-.logo a {
+.logo {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo a {
+  width: 50%;
+  height: 5em;
+  line-height: 5em;
   text-align: center;
+}
+.login_box:nth-child(1) {
+  margin: 0 0 0.5em 0;
+}
+.etc {
+  padding: 0 0 0 1em;
+  justify-content: left;
+}
+#id,
+#password,
+label {
+  padding: 1em;
+}
+#id,
+#password,
+.btn_box > button {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: black;
+}
+input[type="checkbox"] {
+  zoom: 1.5;
 }
