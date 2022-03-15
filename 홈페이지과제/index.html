@@ -11,7 +11,7 @@
   <body>
     <div class="container_size">
       <div class="container">
-        <form class="form" action="">
+        <form class="form" action="/" method="post">
           <div class="logo">
             <a href="">로고</a>
           </div>
@@ -38,7 +38,21 @@
             </div>
             <div class="etc">
               <input type="checkbox" name="keep" id="keep" />
-              <label for="keep">로그인 상태 유지</label>
+              <div class="check">
+                <svg
+                  fill="inherit"
+                  width="1em"
+                  height="1em"
+                  class="off"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                  />
+                </svg>
+              </div>
+              <label for="keep" id="off">로그인 상태 유지</label>
             </div>
             <div class="btn_box">
               <button id="submit" type="submit">로그인</button>
@@ -54,5 +68,6 @@
       </div>
     </div>
     <footer></footer>
+    <script src="/index.js"></script>
   </body>
 </html>
