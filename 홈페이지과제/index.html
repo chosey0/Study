@@ -4,70 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>페이지 제작</title>
-    <link rel="stylesheet" href="/css/페이지제작과제.css" />
+    <title>test</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <div class="container_size">
-      <div class="container">
-        <form class="form" action="/" method="post">
-          <div class="logo">
-            <a href="">로고</a>
-          </div>
-          <div class="login_width">
-            <div class="login_box">
-              <label for="id">ID</label>
-              <input
-                id="id"
-                type="text"
-                class="id"
-                placeholder="아이디를 입력해주세요."
-                required
-              />
+    <div
+      class="min-h-screen bg-gray-50 py-6 flex flex-col justify-center relative overflow-hidden sm:py-12"
+    >
+      <img
+        src="/img/beams.jpg"
+        alt=""
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-none"
+        width="1308"
+      />
+      <div
+        class="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
+      ></div>
+      <div
+        class="relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10"
+      >
+        <div class="max-w-md mx-auto">
+          <img src="/img/logo.svg" class="h-6" alt="Tailwind Play" />
+          <div class="divide-y divide-gray-300/50">
+            <div class="py-8 text-base leading-7 space-y-6 text-gray-600">
+              <p>
+                An advanced online playground for Tailwind CSS, including
+                support for things like:
+              </p>
+              <ul class="space-y-4">
+                <li class="flex items-center">
+                  <svg
+                    class="w-6 h-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="11" />
+                    <path
+                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                      fill="none"
+                    />
+                  </svg>
+                  <p class="ml-4">
+                    Customizing your
+                    <code class="text-sm font-bold text-gray-900"
+                      >tailwind.config.js</code
+                    >
+                    file
+                  </p>
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-6 h-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="11" />
+                    <path
+                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                      fill="none"
+                    />
+                  </svg>
+                  <p class="ml-4">
+                    Extracting classes with
+                    <code class="text-sm font-bold text-gray-900">@apply</code>
+                  </p>
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-6 h-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="11" />
+                    <path
+                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                      fill="none"
+                    />
+                  </svg>
+                  <p class="ml-4">Code completion with instant preview</p>
+                </li>
+              </ul>
+              <p>
+                Perfect for learning how the framework works, prototyping a new
+                idea, or creating a demo to share online.
+              </p>
             </div>
-            <div class="login_box">
-              <label for="password">PW</label>
-              <input
-                id="password"
-                type="text"
-                class="password"
-                placeholder="비밀번호를 입력해주세요."
-                required
-              />
-            </div>
-            <div class="etc">
-              <input type="checkbox" name="keep" id="keep" />
-              <div class="check">
-                <svg
-                  fill="inherit"
-                  width="1em"
-                  height="1em"
-                  class="off"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
+            <div class="pt-8 text-base leading-7 font-semibold">
+              <p class="text-gray-900">Want to dig deeper into Tailwind?</p>
+              <p>
+                <a
+                  href="https://tailwindcss.com/docs"
+                  class="text-sky-500 hover:text-sky-600"
+                  >Read the docs &rarr;</a
                 >
-                  <path
-                    d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
-                  />
-                </svg>
-              </div>
-              <label for="keep" id="off">로그인 상태 유지</label>
-            </div>
-            <div class="btn_box">
-              <button id="submit" type="submit">로그인</button>
+              </p>
             </div>
           </div>
-
-          <div class="sign_box">
-            <a href="">비밀번호 찾기</a>
-            <a href="">아이디 찾기</a>
-            <a href="">회원가입</a>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
-    <footer></footer>
-    <script src="/index.js"></script>
   </body>
 </html>
