@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>페이지 제작</title>
+    <link rel="stylesheet" href="/myweb/css/과제_로그인.css" />
+    <script src="/myweb/js/과제_로그인.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container_size">
+      <div class="container">
+        <form class="form" action="/" method="post">
+          <div class="logo">
+            <a href="">로고</a>
+          </div>
+          <div class="login_width">
+            <div class="login_box">
+              <label for="id">ID</label>
+              <input
+                id="id"
+                type="text"
+                class="id"
+                placeholder="아이디를 입력해주세요."
+                required
+              />
+            </div>
+            <div class="login_box">
+              <label for="password">PW</label>
+              <input
+                id="password"
+                type="text"
+                class="password"
+                placeholder="비밀번호를 입력해주세요."
+                required
+              />
+            </div>
+            <div class="etc">
+              <input type="checkbox" name="keep" id="keep" />
+              <div class="check">
+                <svg
+                  fill="inherit"
+                  width="1em"
+                  height="1em"
+                  class="off"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                  />
+                </svg>
+              </div>
+              <label for="keep" id="off">로그인 상태 유지</label>
+            </div>
+            <div class="btn_box">
+              <button id="submit" type="submit">로그인</button>
+            </div>
+          </div>
+
+          <div class="sign_box">
+            <a href="">비밀번호 찾기</a>
+            <a href="">아이디 찾기</a>
+            <a href="">회원가입</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
