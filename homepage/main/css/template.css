@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  --primary-color: 95 199 209;
+  --color-gray: 199 199 199;
+  --color-white: 255 255 255;
+}
+header,
+div,
+nav,
+section,
+article {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+div {
+  position: relative;
+}
+.header {
+  min-height: 150px;
+  padding: 1.5em 0;
+  font-weight: 500;
+}
+.flex {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-left {
+  justify-content: left;
+}
+.justify-right {
+  justify-content: right;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.h-full {
+  height: 100%;
+}
+.h-1\/2 {
+  height: 50%;
+}
+.top-menu {
+  position: absolute;
+  right: 0;
+}
+.logo {
+  color: rgba(var(--primary-color));
+}
+/* .etc-top {
+  padding: 1em 0; */
+.side-item {
+  height: 3em;
+  line-height: 3em;
+}
+
+.reservation {
+  display: block;
+
+  height: 3em;
+  line-height: 3em;
+
+  background-color: rgba(var(--primary-color));
+  color: rgba(var(--color-white));
+}
+nav {
+  height: 3em;
+}
+.nav-item {
+  line-height: 3em;
+}
+
+.info {
+  background-image: url("https://cdn.imweb.me/thumbnail/20210802/c7a9ed105871a.png");
+  background: center no-repeat cover;
+}
+
+.bg-white {
+  background-color: rgba(255, 255, 255);
+}
