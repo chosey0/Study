@@ -3,6 +3,7 @@ const http = require("http");
 const https = require("https");
 const app = express();
 
+// 경로 정의
 app.get("/", function (req, res) {
   res.send("Hello World");
 });
