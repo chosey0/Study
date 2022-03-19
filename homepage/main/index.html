@@ -1,144 +1,251 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/main/css/template.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/main/css/template.css" />
-</head>
-
-<body class="col-xs-12">
-  <header class="row flex wrap justify-center items-center header">
-    <div class="flex items-center justify-center col-md-4 h-full"></div>
-    <div class="flex items-center justify-center col-xs-12 col-md-4 h-full">
-      <h1>
-        <a href="" class="flex items-center justify-center"><img class="col-md-6 col-xs-6"
-            src="https://cdn.imweb.me/thumbnail/20200721/408847c5dabec.png" alt="" /></a>
-      </h1>
-    </div>
-    <div class="flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full">
-      <div class="flex justify-around wrap col-md-12 col-xs-12 h-1/2">
-        <div class="flex items-center justify-center col-md-3 side-item">
-          <a href="">LOGIN</a>
+  <body class="">
+    <header class="flex wrap justify-center items-center header">
+      <div
+        class="flex items-center justify-right col-xs-12 col-md-8 h-full logo-box"
+      >
+        <h1 class="col-xs-4">
+          <a href="" class="flex items-center justify-center"
+            ><img
+              class="col-md-6 col-xs-8"
+              src="https://cdn.imweb.me/thumbnail/20200721/408847c5dabec.png"
+              alt=""
+          /></a>
+        </h1>
+      </div>
+      <div
+        class="flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full"
+      >
+        <div class="flex justify-around wrap col-md-12 col-xs-12 h-1/2">
+          <div class="flex items-center justify-center col-md-3 side-item">
+            <a href="">LOGIN</a>
+          </div>
+          <div class="flex items-center justify-center col-md-3 side-item">
+            <a href="">JOIN</a>
+          </div>
+          <div class="flex items-center justify-center col-md-3 side-item">
+            <a href="">CART</a>
+          </div>
+          <div class="flex items-center justify-center col-md-3 side-item">
+            <a href="">RECRUIT</a>
+          </div>
         </div>
-        <div class="flex items-center justify-center col-md-3 side-item">
-          <a href="">JOIN</a>
-        </div>
-        <div class="flex items-center justify-center col-md-3 side-item">
-          <a href="">CART</a>
-        </div>
-        <div class="flex items-center justify-center col-md-3 side-item">
-          <a href="">RECRUIT</a>
+        <div class="flex justify-around col-md-12 col-xs-12 h-1/2">
+          <div class="col-md-6 side-item">
+            <a href="" class="col-md-12 reservation">제주맥주 라이프</a>
+          </div>
+          <div class="col-md-6 side-item">
+            <a href="" class="col-md-12 reservation">양조장 예약</a>
+          </div>
         </div>
       </div>
-      <div class="flex justify-around col-md-12 col-xs-12 h-1/2">
-        <div class="col-md-6 side-item">
-          <a href="" class="col-md-12 reservation">제주맥주 라이프</a>
+      <nav class="col-xs-12 flex justify-center items-center">
+        <div
+          class="nav flex wrap items-center justify-around col-sm-12 col-xs-12"
+        >
+          <a href="" class="nav-item">JEJU BEER LIFE</a>
+          <a href="" class="nav-item">EXPERIENCE</a>
+          <a href="" class="nav-item">COLLABORATION</a>
+          <a href="" class="nav-item">SHOP</a>
+          <a href="" class="nav-item">BREWERY</a>
         </div>
-        <div class="col-md-6 side-item">
-          <a href="" class="col-md-12 reservation">양조장 예약</a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <nav class="row flex justify-center items-center">
-    <div class="nav flex items-center justify-around col-sm-12 col-xs-12">
-      <a href="" class="nav-item">JEJU BEER LIFE</a>
-      <a href="" class="nav-item">EXPERIENCE</a>
-      <a href="" class="nav-item">COLLABORATION</a>
-      <a href="" class="nav-item">SHOP</a>
-      <a href="" class="nav-item">BREWERY</a>
-    </div>
-  </nav>
-  <main class="row">
-    <section class="col-12">
-      <!-- 동영상 -->
-      <article class="">
-        <video class="col-xs-12" style="padding: 0" muted="" playsinline="" autoplay="" loop=""
-          src="https://jbimweb.s3.ap-northeast-2.amazonaws.com/video/jb_tvc_event_web.mp4"></video>
-      </article>
-    </section>
-    <!-- 맥주 소개 -->
-    <section>
-      <article class="flex justify-center items-center col-xs-12 bg-white">
-        <img class="col-xs-7" src="https://cdn.imweb.me/thumbnail/20210730/63a641ce3513b.png" alt="" />
-      </article>
-    </section>
-    <section class="info ">
-git -->
-      <article>
+      </nav>
+      <!-- hidden menu -->
+      <div class="visible-xs visible-sm">ddd</div>
+    </header>
+
+    <main class="">
+      <section class="row">
+        <!-- 동영상 -->
+        <video
+          style="padding: 0; width: 100%; min-height: 300px"
+          muted=""
+          playsinline=""
+          autoplay=""
+          loop=""
+          src="https://jbimweb.s3.ap-northeast-2.amazonaws.com/video/jb_tvc_event_web.mp4"
+        ></video>
+      </section>
+      <!-- 맥주 소개 -->
+      <section class="row">
+        <article class="flex justify-center items-center col-xs-12 dive-into">
+          <img
+            class="col-xs-7"
+            src="https://cdn.imweb.me/thumbnail/20210730/63a641ce3513b.png"
+            alt=""
+          />
+        </article>
+      </section>
+      <section class="row visible-md visible-lg">
+        <article class="youtube flex justify-center items-center col-xs-12">
+          <iframe
+            src="https://www.youtube.com/embed/gWXdzlIQ-YE?id=gWXdzlIQ-YE&loop=0&rel=0&playlist=gWXdzlIQ-YE&showinfo=1&controls&mute=0&autoplay=1&enablejsapi=1&origin=https%3A%2F%2Fjejubeer.co.kr&widgetid=1"
+            frameborder="0"
+          ></iframe>
+        </article>
+      </section>
+      <section class="row">
         <!-- 제주 위트 에일 -->
-        <img src="https://cdn.imweb.me/thumbnail/20210801/1813860403b70.png" alt="" />
-        <p>
-          제주 위트 에일은 제주 감귤 껍질의 상큼함과 섬세한 꽃 향,
-          <br />
-          입 안 가득 부드럽게 퍼지는 시트러스향이 만나
-          <br />
-          산뜻한 끝 맛을 선사하는 밀맥주입니다.
+        <article
+          class="col-xs-12 flex wrap justify-center items-center beer-content"
+        >
+          <img
+            class="col-md-6 col-xs-5"
+            src="https://cdn.imweb.me/thumbnail/20210802/3badabe16b4cc.png"
+            alt=""
+          />
+          <div
+            class="flex wrap justify-center items-center jumbotron beer-info"
+          >
+            <img
+              class="col-md-3 col-xs-4"
+              src="https://cdn.imweb.me/thumbnail/20210801/1813860403b70.png"
+              alt=""
+            />
+            <div class="flex wrap col-md-6 col-xs-12">
+              <p class="col-xs-12 info-text"><b>제주 위트 에일</b>은</p>
+              <p class="col-xs-12 info-text">
+                제주 감귤 껍질의 상큼함과 섬세한 꽃 향,
+              </p>
+              <p class="col-xs-12 info-text">
+                입 안 가득 부드럽게 퍼지는 시트러스향이 만나
+              </p>
+              <p class="col-xs-12 info-text">
+                산뜻한 끝 맛을 선사하는 밀맥주입니다.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article
+          class="col-xs-12 flex wrap justify-center items-center beer-content"
+        >
+          <!-- 제주 펠롱 에일 -->
+          <img
+            class="col-md-6 col-xs-5"
+            src="https://cdn.imweb.me/thumbnail/20210803/0400e070557db.png"
+            alt=""
+          />
+          <div
+            class="flex wrap justify-center items-center jumbotron beer-info"
+          >
+            <img
+              class="col-md-3 col-xs-4"
+              src="https://cdn.imweb.me/thumbnail/20210801/cfe9d9816bb83.png"
+              alt=""
+            />
+            <div class="flex wrap col-md-6 col-xs-12">
+              <p class="col-xs-12 info-text"><b>제주 펠롱 에일</b>은</p>
+              <p class="col-xs-12 info-text">
+                반딧불이 반짝이는 곶자왈에서 영감을 받아탄생하였습니다.
+              </p>
+              <p class="col-xs-12 info-text">
+                다양하고 개성있는 홉들을 블렌딩하여
+              </p>
+              <p class="col-xs-12 info-text">
+                시트러스 아로마와 진한 맥아의 맛이 어우러져
+              </p>
+              <p class="col-xs-12 info-text">
+                풍부한 풍미를 선사하는 페일에일 맥주입니다.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article
+          class="col-xs-12 flex wrap justify-center items-center beer-content"
+        >
+          <!-- 제주 거멍 에일 -->
+          <img
+            class="col-md-6 col-xs-5"
+            src="https://cdn.imweb.me/thumbnail/20210803/06b2ded29c8f5.png"
+            alt=""
+          />
+          <div
+            class="flex wrap justify-center items-center jumbotron beer-info"
+          >
+            <img
+              class="col-md-3 col-xs-4"
+              src="https://cdn.imweb.me/thumbnail/20210802/78a85a4c3d9c2.png"
+              alt=""
+            />
+            <div class="flex wrap col-md-6 col-xs-12">
+              <p class="col-xs-12 info-text"><b>제주 거멍 에일</b>은</p>
+              <p class="col-xs-12 info-text">
+                제주의 여름밤을 떠올리게 하는 짙은 빛깔 속에서,
+              </p>
+              <p class="col-xs-12 info-text">
+                제주 흑보리와 초콜릿 밀로 완성된 은은한 달큰함과
+              </p>
+              <p class="col-xs-12 info-text">
+                경쾌한 풍미를 자아내는 흑맥주입니다.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="row main-etc">
+        <p class="etc-text">제주맥주는</p>
+        <p class="etc-text">
+          <b> 전국 편의점 및 대형마트</b>에서 만나보실 수 있습니다.
         </p>
-      </article>
-      <article>
-        <!-- 제주 펠롱 에일 -->
-        <img src="https://cdn.imweb.me/thumbnail/20210801/cfe9d9816bb83.png" alt="" />
-        <p>
-          제주 펠롱 에일은 반딧불이 반짝이는 곶자왈에서 영감을 받아
-          탄생하였습니다.
-          <br />
-          다양하고 개성있는 홉들을 블렌딩하여
-          <br />
-          시트러스 아로마와 진한 맥아의 맛이 어우러져
-          <br />
-          풍부한 풍미를 선사하는 페일에일 맥주입니다.
-        </p>
-      </article>
-      <article>
-        <!-- 제주 거멍 에일 -->
-        <img src="https://cdn.imweb.me/thumbnail/20210802/78a85a4c3d9c2.png" alt="" />
-        <p>
-          제주 거멍 에일은 제주의 여름밤을 떠올리게하는 짙은 빛깔 속에서,
-          <br />
-          제주 흑보리와 초콜릿 밀로 완성된 은은한 달큰함과 경쾌한 풍미를
-          자아내는 흑맥주입니다.
-        </p>
-      </article>
-    </section>
-    <article>
-      제주맥주는 전국 편의점 및 대형마트에서 만나보실 수 있습니다.
-    </article>
-    </section>
-  </main>
-  <footer>
-    <div>
-      <a href="">ABOUT US</a>
-      <a href="">OUR BEERS</a>
-      <a href="">NEWS</a>
-      <a href="">CONTACT</a>
-      <a href="">IR</a>
-      <a href="">이용약관</a>
-    </div>
-    <div>
-      <a href=""><img src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png" alt="" /></a>
-      <a href=""><img src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/5215b07b123cf.png" alt="" /></a>
-      <a href=""><img src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/08634a2341636.png" alt="" /></a>
-      <a href=""><img src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/29268409b8739.png" alt="" /></a>
-    </div>
-    <!-- 다음줄 -->
-    <div>
-      이용약관 | 개인정보 처리방침 | 영상정보 처리방침 <br />
-      제주맥주 주식회사 대표이사 문혁기 <br />
-      본사) 제주특별자치도 제주시 한립읍<br />
-      금능농공길 62-11 제주맥주 주식회사 대표 문혁기 <br />
-      본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11 <br />
-      서울사무실) 서울특별시 중구 동호로 228동호 38빌딩 6층 <br />
-      호스팅 제공자 (주)아임웹 사업자등록번호 616-86-27415<br />
-      통신판매업신고번호 제 2020-제주한림-0101 호 <br />
-      고객센터 02-2235-5559, jejubeer@jejubeer.co.kr <br />
-      COPYRIGHT 2021@ JEJU BEER COMPANY <br />
-    </div>
-  </footer>
-</body>
-
+      </section>
+    </main>
+    <footer>
+      <div>
+        <a href="">ABOUT US</a>
+        <a href="">OUR BEERS</a>
+        <a href="">NEWS</a>
+        <a href="">CONTACT</a>
+        <a href="">IR</a>
+        <a href="">이용약관</a>
+      </div>
+      <div>
+        <a href=""
+          ><img
+            src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/5215b07b123cf.png"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/08634a2341636.png"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/29268409b8739.png"
+            alt=""
+        /></a>
+      </div>
+      <!-- 다음줄 -->
+      <div>
+        이용약관 | 개인정보 처리방침 | 영상정보 처리방침 <br />
+        제주맥주 주식회사 대표이사 문혁기 <br />
+        본사) 제주특별자치도 제주시 한립읍<br />
+        금능농공길 62-11 제주맥주 주식회사 대표 문혁기 <br />
+        본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11 <br />
+        서울사무실) 서울특별시 중구 동호로 228동호 38빌딩 6층 <br />
+        호스팅 제공자 (주)아임웹 사업자등록번호 616-86-27415<br />
+        통신판매업신고번호 제 2020-제주한림-0101 호 <br />
+        고객센터 02-2235-5559, jejubeer@jejubeer.co.kr <br />
+        COPYRIGHT 2021@ JEJU BEER COMPANY <br />
+      </div>
+    </footer>
+  </body>
 </html>

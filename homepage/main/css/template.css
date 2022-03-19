@@ -8,6 +8,7 @@
   --color-gray: 199 199 199;
   --color-white: 255 255 255;
 }
+
 header,
 div,
 nav,
@@ -16,56 +17,75 @@ article {
   margin: 0;
   padding: 0;
 }
+
+body {
+}
+
 a {
   text-decoration: none;
   color: black;
   display: block;
 }
-div {
-  position: relative;
+
+.row {
+  margin: 0;
 }
+
 .header {
   min-height: 150px;
   padding: 1.5em 0;
   font-weight: 500;
 }
+
 .flex {
   display: flex;
 }
+
 .wrap {
   flex-wrap: wrap;
 }
+
 .items-center {
   align-items: center;
 }
+
 .justify-center {
   justify-content: center;
 }
+
 .justify-left {
   justify-content: left;
 }
+
 .justify-right {
   justify-content: right;
 }
+
 .justify-between {
   justify-content: space-between;
 }
+
 .justify-around {
   justify-content: space-around;
 }
+
 .h-full {
   height: 100%;
 }
+
 .h-1\/2 {
   height: 50%;
 }
+
 .top-menu {
   position: absolute;
   right: 0;
 }
+
 .logo {
   color: rgba(var(--primary-color));
 }
+
 /* .etc-top {
   padding: 1em 0; */
 .side-item {
@@ -82,18 +102,93 @@ div {
   background-color: rgba(var(--primary-color));
   color: rgba(var(--color-white));
 }
+
 nav {
   height: 3em;
 }
+
 .nav-item {
   line-height: 3em;
 }
 
-.info {
-  background-image: url("https://cdn.imweb.me/thumbnail/20210802/c7a9ed105871a.png");
-  background: center no-repeat cover;
+.dive-into {
+  margin: 2em 0;
+}
+
+.youtube {
+  position: relative;
+  height: 100vh;
+  background: url("https://cdn.imweb.me/thumbnail/20210802/c7a9ed105871a.png")
+    no-repeat center / cover;
+}
+
+.youtube > iframe {
+  margin: 10em auto 0 auto;
+  width: 80vw;
+  height: 60vh;
 }
 
 .bg-white {
   background-color: rgba(255, 255, 255);
+  background: center no-repeat cover;
+}
+
+.beer-content {
+  padding: 3em 0;
+  position: relative;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.beer-content:nth-child(1) {
+  background-image: url(https://cdn.imweb.me/thumbnail/20210802/873d0550dabe0.png);
+}
+
+.beer-content:nth-child(2) {
+  background-image: url(https://cdn.imweb.me/thumbnail/20210803/5f5363c2461b5.png);
+}
+
+.beer-content:nth-child(3) {
+  background-image: url(https://cdn.imweb.me/thumbnail/20210803/3306c4b7aa81b.png);
+}
+
+.beer-info {
+  margin: 3em 0;
+}
+
+.info-text {
+  color: white;
+}
+
+.main-etc {
+  color: rgba(var(--primary-color));
+}
+
+.jumbotron {
+  background: none;
+}
+
+@media (max-width: 990px) {
+  .logo-box {
+    justify-content: left;
+  }
+
+  .info-text:nth-child(1) {
+    margin: 1em 0 0.2em 0;
+  }
+
+  .info-text:nth-child(2),
+  .info-text:nth-child(3),
+  .info-text:nth-child(4) {
+    margin: 0.2em;
+  }
+}
+
+@media (min-width: 989px) {
+  .info-text {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
 }
