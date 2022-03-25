@@ -18,61 +18,125 @@
     />
     <link rel="stylesheet" href="/main/css/template.css" />
     <link rel="stylesheet" href="/main/css/index.css" />
+    <link rel="stylesheet" href="/main/css/menu-icon.css" />
   </head>
 
-  <body class="">
-    <header class="flex wrap justify-center items-center header">
+  <body>
+    <div
+      class="bg-white hidden-md hidden-lg col-xs-12 flex h-full absolute hidden-menu-list"
+    >
+      <div>
+        <ul class="col-xs-9 flex hidden-menu-left">
+          <li><a href="">LOGIN</a></li>
+          <li><a href="">JOIN</a></li>
+          <li><a href="">RECRUIT</a></li>
+        </ul>
+        <ul class="col-xs-3 hidden-menu-right">
+          <li><a href="">양조장 예약</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="flex wrap col-xs-12">
+          <li class="col-xs-12 flex justify-left bg-white">
+            <a href="">JEJU BEER LIFE</a>
+          </li>
+          <li class="col-xs-12 flex justify-left bg-white">
+            <a href="">EXPERIENCE</a>
+          </li>
+          <li class="col-xs-12 flex justify-left bg-white">
+            <a href="">COLLABORATION</a>
+          </li>
+          <li class="col-xs-12 flex justify-left bg-white">
+            <a href="">SHOP</a>
+          </li>
+        </ul>
+        <ul class="flex col-xs-12 bg-white">
+          <li class="col-xs-12 flex justify-left bg-white">
+            <a href="">BREWERY</a>
+          </li>
+        </ul>
+        <ul class="flex wrap col-xs-12">
+          <li class="col-xs-12 flex justify-left bg-white">
+            <a href="">about us</a>
+          </li>
+          <li class="col-xs-12 flex justify-left bg-white">
+            <a href="">our beers</a>
+          </li>
+          <li class="col-xs-12 flex justify-left bg-white">
+            <a href="">news</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="flex wrap justify-center items-center col-xs-12 header">
       <div
-        class="flex items-center justify-right col-xs-12 col-md-8 h-full logo-box"
+        class="flex items-center justify-right col-xs-10 col-sm-7 col-md-7 logo-box"
       >
-        <h1 class="col-xs-4">
-          <a href="" class="flex items-center justify-center"
+        <hn class="col-md-7 col-xs-5">
+          <a href="" class="flex items-center justify-right"
             ><img
-              class="col-md-6 col-xs-8"
+              class="col-md-6 col-xs-12"
               src="https://cdn.imweb.me/thumbnail/20200721/408847c5dabec.png"
               alt=""
           /></a>
-        </h1>
+        </hn>
       </div>
+      <!-- 992px 이하일 때 보여지는 헤더 메뉴 -->
       <div
-        class="flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full side-menu"
+        class="hidden-md hidden-lg col-xs-2 hidden-menu flex items-center justify-right"
       >
-        <div class="flex justify-around wrap col-md-12 col-xs-12 h-1/2">
-          <div class="flex items-center justify-center col-md-3 side-item">
-            <a href="">LOGIN</a>
-          </div>
-          <div class="flex items-center justify-center col-md-3 side-item">
-            <a href="/main/join.html">JOIN</a>
-          </div>
-          <div class="flex items-center justify-center col-md-3 side-item">
-            <a href="">CART</a>
-          </div>
-          <div class="flex items-center justify-center col-md-3 side-item">
-            <a href="">RECRUIT</a>
-          </div>
-        </div>
-        <div class="flex justify-around col-md-12 col-xs-12 h-1/2">
-          <div class="col-md-6 side-item">
-            <a href="" class="col-md-12 reservation">제주맥주 라이프</a>
-          </div>
-          <div class="col-md-6 side-item">
-            <a href="" class="col-md-12 reservation">양조장 예약</a>
-          </div>
-        </div>
+        <svg
+          class="hidden-menu-icon"
+          viewBox="0 0 100 80"
+          width="18"
+          height="18"
+        >
+          <rect width="100" height="10"></rect>
+          <rect y="30" width="100" height="10"></rect>
+          <rect y="60" width="100" height="10"></rect>
+        </svg>
       </div>
-      <nav class="col-xs-12 flex justify-center items-center">
-        <div
+      <!-- 993px 이상일 때 보여지는 헤더 메뉴-->
+      <div
+        class="hidden-sm hidden-xs flex wrap items-center justify-center col-md-5 col-sm-12 col-xs-12 h-full side-menu"
+      >
+        <ul class="flex justify-around wrap col-xs-12">
+          <li class="flex items-center justify-center col-md-3 side-item">
+            <a href="">LOGIN</a>
+          </li>
+          <li class="flex items-center justify-center col-md-3 side-item">
+            <a href="/main/join.html">JOIN</a>
+          </li>
+          <li class="flex items-center justify-center col-md-3 side-item">
+            <a href="">CART</a>
+          </li>
+          <li class="flex items-center justify-center col-md-3 side-item">
+            <a href="">RECRUIT</a>
+          </li>
+        </ul>
+        <ul class="flex justify-around col-md-12 col-xs-12">
+          <li class="col-md-6 side-item">
+            <a href="" class="col-md-12 reservation">제주맥주 라이프</a>
+          </li>
+          <li class="col-md-6 side-item">
+            <a href="" class="col-md-12 reservation">양조장 예약</a>
+          </li>
+        </ul>
+      </div>
+      <nav
+        class="hidden-sm hidden-xs col-xs-12 flex justify-center items-center"
+      >
+        <ul
           class="nav flex wrap items-center justify-around col-sm-12 col-xs-12"
         >
-          <a href="" class="nav-item">JEJU BEER LIFE</a>
-          <a href="" class="nav-item">EXPERIENCE</a>
-          <a href="" class="nav-item">COLLABORATION</a>
-          <a href="" class="nav-item">SHOP</a>
-          <a href="" class="nav-item">BREWERY</a>
-        </div>
+          <li><a href="" class="nav-item">JEJU BEER LIFE</a></li>
+          <li><a href="" class="nav-item">EXPERIENCE</a></li>
+          <li><a href="" class="nav-item">COLLABORATION</a></li>
+          <li><a href="" class="nav-item">SHOP</a></li>
+          <li><a href="" class="nav-item">BREWERY</a></li>
+        </ul>
       </nav>
-      <!-- hidden menu -->
-      <div class="visible-xs visible-sm">ddd</div>
     </header>
 
     <main class="">
@@ -236,6 +300,7 @@
         </p>
       </section>
     </main>
+    <hr />
     <footer>
       <section
         class="flex col-xs-12 hidden-xs hidden-sm justify-between items-center"

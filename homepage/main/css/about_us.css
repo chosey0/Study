@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  --primary-color: #1ecad3;
+  --color-gray: 199 199 199;
+  --color-white: 255 255 255;
+}
+.about_link {
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 2rem;
+  margin: 3rem 1rem;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+}
+.about_link a {
+  color: white;
+}
+@media (max-width: 989px) {
+  .logo-box {
+    position: absolute;
+    z-index: 1000;
+    padding: 1em 1em;
+  }
+  .hidden-menu {
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    padding: 1em 1em;
+  }
+}

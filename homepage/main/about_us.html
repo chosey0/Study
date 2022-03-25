@@ -8,54 +8,186 @@
   <title></title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/main/css/template.css" />
+  <link rel="stylesheet" href="/main/css/menu-icon.css">
+  <link rel="stylesheet" href="/main/css/about_us.css">
+  
 </head>
 
 <body>
-  <header class="flex wrap justify-center items-center header">
-    <div class="flex items-center justify-right col-xs-12 col-md-8 h-full logo-box">
-      <h1 class="col-xs-4">
-        <a href="" class="flex items-center justify-center"><img class="col-md-6 col-xs-8"
+  <!-- <div
+  class="bg-white hidden-md hidden-lg col-xs-12 flex h-full absolute hidden-menu-list"
+>
+  <div>
+    <ul class="col-xs-9 flex hidden-menu-left">
+      <li><a href="">LOGIN</a></li>
+      <li><a href="">JOIN</a></li>
+      <li><a href="">RECRUIT</a></li>
+    </ul>
+    <ul class="col-xs-3 hidden-menu-right">
+      <li><a href="">양조장 예약</a></li>
+    </ul>
+  </div>
+  <div>
+    <ul class="flex wrap col-xs-12">
+      <li class="col-xs-12 flex justify-left bg-white">
+        <a href="">JEJU BEER LIFE</a>
+      </li>
+      <li class="col-xs-12 flex justify-left bg-white">
+        <a href="">EXPERIENCE</a>
+      </li>
+      <li class="col-xs-12 flex justify-left bg-white">
+        <a href="">COLLABORATION</a>
+      </li>
+      <li class="col-xs-12 flex justify-left bg-white">
+        <a href="">SHOP</a>
+      </li>
+    </ul>
+    <ul class="flex col-xs-12 bg-white">
+      <li class="col-xs-12 flex justify-left bg-white">
+        <a href="">BREWERY</a>
+      </li>
+    </ul>
+    <ul class="flex wrap col-xs-12">
+      <li class="col-xs-12 flex justify-left bg-white">
+        <a href="">about us</a>
+      </li>
+      <li class="col-xs-12 flex justify-left bg-white">
+        <a href="">our beers</a>
+      </li>
+      <li class="col-xs-12 flex justify-left bg-white">
+        <a href="">news</a>
+      </li>
+    </ul>
+  </div>
+</div> -->
+
+  <header class="flex wrap justify-center col-xs-12 header" style="padding: 0; height: fit-content;">
+    <div class="flex items-center justify-right col-xs-10 col-sm-7 col-md-7 logo-box">
+      <hn class="col-md-7 col-xs-5">
+        <a href="" class="flex items-center justify-right"><img class="col-md-6 col-xs-12"
             src="https://cdn.imweb.me/thumbnail/20200721/408847c5dabec.png" alt="" /></a>
-      </h1>
+      </hn>
     </div>
-    <div class="flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full side-menu">
-      <div class="flex justify-around wrap col-md-12 col-xs-12 h-1/2">
-        <div class="flex items-center justify-center col-md-3 side-item">
-          <a href="/main/login.html">LOGIN</a>
-        </div>
-        <div class="flex items-center justify-center col-md-3 side-item">
+    <!-- 992px 이하일 때 보여지는 헤더 메뉴 -->
+    <div class="hidden-md hidden-lg col-xs-2 hidden-menu flex items-center justify-right" style="position: absolute;z-index: 1000; right: 0;padding: 1em 1em">
+      <svg class="hidden-menu-icon" viewBox="0 0 100 80" width="18" height="18">
+        <rect width="100" height="10"></rect>
+        <rect y="30" width="100" height="10"></rect>
+        <rect y="60" width="100" height="10"></rect>
+      </svg>
+    </div>
+    <!-- 993px 이상일 때 보여지는 헤더 메뉴-->
+    <div
+      class="hidden-sm hidden-xs flex wrap items-center justify-center col-md-5 col-sm-12 col-xs-12 h-full side-menu">
+      <ul class="flex justify-around wrap col-xs-12">
+        <li class="flex items-center justify-center col-md-3 side-item">
+          <a href="">LOGIN</a>
+        </li>
+        <li class="flex items-center justify-center col-md-3 side-item">
           <a href="/main/join.html">JOIN</a>
-        </div>
-        <div class="flex items-center justify-center col-md-3 side-item">
+        </li>
+        <li class="flex items-center justify-center col-md-3 side-item">
           <a href="">CART</a>
-        </div>
-        <div class="flex items-center justify-center col-md-3 side-item">
+        </li>
+        <li class="flex items-center justify-center col-md-3 side-item">
           <a href="">RECRUIT</a>
-        </div>
-      </div>
-      <div class="flex justify-around col-md-12 col-xs-12 h-1/2">
-        <div class="col-md-6 side-item">
+        </li>
+      </ul>
+      <ul class="flex justify-around col-md-12 col-xs-12">
+        <li class="col-md-6 side-item">
           <a href="" class="col-md-12 reservation">제주맥주 라이프</a>
-        </div>
-        <div class="col-md-6 side-item">
+        </li>
+        <li class="col-md-6 side-item">
           <a href="" class="col-md-12 reservation">양조장 예약</a>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
-    <nav class="col-xs-12 flex justify-center items-center">
-      <div class="nav flex wrap items-center justify-around col-sm-12 col-xs-12">
-        <a href="" class="nav-item">JEJU BEER LIFE</a>
-        <a href="" class="nav-item">EXPERIENCE</a>
-        <a href="" class="nav-item">COLLABORATION</a>
-        <a href="/main/shop.html" class="nav-item">SHOP</a>
-        <a href="" class="nav-item">BREWERY</a>
-      </div>
+    <nav class="hidden-sm hidden-xs col-xs-12 flex justify-center items-center">
+      <ul class="nav flex wrap items-center justify-around col-sm-12 col-xs-12">
+        <li><a href="" class="nav-item">JEJU BEER LIFE</a></li>
+        <li><a href="" class="nav-item">EXPERIENCE</a></li>
+        <li><a href="" class="nav-item">COLLABORATION</a></li>
+        <li><a href="" class="nav-item">SHOP</a></li>
+        <li><a href="" class="nav-item">BREWERY</a></li>
+      </ul>
     </nav>
-    <!-- hidden menu -->
-    <div class="visible-xs visible-sm">ddd</div>
+    
+    <video controls muted autoplay loop class="col-xs-12 flex" style="padding:0;"
+    src="https://jbimweb.s3.ap-northeast-2.amazonaws.com/video/jb_aboutus_full_low.mp4" frameborder="0">
+  </video>
   </header>
 
-  <main></main>
+  <main class="">
+    <div class="flex justify-center col-xs-12">
+      <div class="flex about_link">
+        <a href="">ABOUT US</a>
+      </div>
+      <div class="flex about_link">
+        <a href="">ACTIVITIES</a>
+      </div>
+      <div class="flex about_link">
+        <a href="">OUR TEAM</a>
+      </div>
+    </div>
+    <section>
+      <article>
+        <p>
+          <h2>ABOUT US</h2>
+          <b>WE ARE</b><br>
+          왜 한국인들의 인생 맥주는 수입맥주일까?<br>
+          왜 소맥 문화가 아닌 맥주만의 문화가 없을까?<br>
+          왜 맥주가 탄생하는 과정을 보여주고 알려줄 수 없을까?<br>
+          왜 우리나라에는 꼭 가보고 싶은 양조장이 없을까?<br>
+
+          제주맥주가 태어난 이유인 이 질문들에 대한 답이<br>
+          우리가 하는 모든 일입니다.<br>
+
+          크래프트 맥주계의 리더로,<br>
+          공장이 아닌 양조장을<br>
+          제조 회사를 넘어 문화 기업을 만들며<br>
+          한국 맥주 시장을 새롭게 선도합니다.<br>
+        </p>
+        <img style="padding: 0;"class="col-xs-12"src="https://cdn.imweb.me/thumbnail/20200720/3fde3b2d76012.jpg" alt="">
+      </article>
+      <section class="row">
+        <article class="row">
+          <p>
+            <b>ACCOMPLISHMENTS</b><br>
+            <b>국내 최초 글로벌 크래프트 맥주사</b><br>
+            미국 뉴욕 판매 1위 크래프트맥주사 브루클린 브루어리와의<br>
+            아시아 첫 파트너십<br>
+            <b>맥주업계 최초 중소벤처기업부 '예비 유니콘' 선정</b><br>
+            <b>누적 투자액 600억 돌파</b> (2020년 기준)<br>
+            <b>런칭 후 매년 200% 이상 매출 성장</b> (2020년 기준)<br>
+            <b>제주 양조장 방문객 누적 약 10만 명</b> (2020년 기준)<br>
+            제주도의 새로운 관광 명소로 자리매김<br>
+            <b>현대카드, 배틀그라운드, 이니스프리, 하이랜드파크<br>
+              등과의 콜라보레이션</b><br>
+          </p>
+          <div class="flex col-md-6 col-xs-12 items-center">
+            <img class="col-xs-4" src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/8fce51364ce95.png" alt="">
+            <p>
+              <b>JEJU WIT ALE</b><br>
+
+              세계 3대 맥주 품평회 2018 AIBA<br>
+              국내 최초 ‘벨기에식 밀맥주’ 부분<br>
+              <b>은상 수상</b><br>
+            </p>
+          </div>
+          <div class="flex col-md-6 col-xs-12 items-center">
+            <img class=" col-xs-4" src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/8637f19ac9b95.png" alt="">
+            <p>
+              <b>JEJU WIT ALE</b><br>
+
+              2019 대한민국 주류대상<br>
+              크래프트 맥주 에일 부분 <b>대상 수상</b><br>
+            </p>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+  <hr>
   <footer>
     <section class="flex col-xs-12 hidden-xs hidden-sm justify-between items-center">
       <div class="flex justify-between col-xs-5">
