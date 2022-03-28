@@ -8,17 +8,47 @@
   <title></title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/main/css/template.css" />
+  <link rel="stylesheet" href="/main/css/menu-icon.css">
 </head>
 
 <body>
   <header class="flex wrap justify-center items-center header">
-    <div class="flex items-center justify-right col-xs-12 col-md-8 h-full logo-box">
-      <h1 class="col-xs-4">
-        <a href="" class="flex items-center justify-center"><img class="col-md-6 col-xs-8"
-            src="https://cdn.imweb.me/thumbnail/20200721/408847c5dabec.png" alt="" /></a>
+    <div class="flex items-center justify-right col-xs-12 col-md-8 logo-box">
+      <h1 class="col-md-8 col-sm-4 col-xs-6">
+        <a href="" class="flex items-center justify-center justify-right-md justify-left-xs"><img
+            class="col-md-6 col-xs-8" src="https://cdn.imweb.me/thumbnail/20200721/408847c5dabec.png" alt="" /></a>
       </h1>
+      <div class="flex justify-right col-md-1 col-sm-8 col-xs-6">
+        <svg width="0" height="0">
+          <mask id="mask">
+            <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+              stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4"></path>
+          </mask>
+        </svg>
+        <div id="menu-icon" class="hidden-md hidden-lg menu-box is-closed">
+
+          <div class="menu-icon">
+            <div class="menu-container">
+              <span class="menu-bun-top"></span>
+              <span class="menu-filling"></span>
+              <span class="menu-bun-bot"></span>
+            </div>
+          </div>
+          <!-- the masked path that animates the fill to the ring -->
+          <svg width="0" height="0">
+            <mask id="mask">
+              <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+                stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4"></path>
+            </mask>
+          </svg>
+        </div>
+
+      </div>
+
     </div>
-    <div class="flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full side-menu">
+    </div>
+    <div
+      class="visible-md visible-lg flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full">
       <div class="flex justify-around wrap col-md-12 col-xs-12 h-1/2">
         <div class="flex items-center justify-center col-md-3 side-item">
           <a href="/main/login.html">LOGIN</a>
@@ -42,7 +72,7 @@
         </div>
       </div>
     </div>
-    <nav class="col-xs-12 flex justify-center items-center">
+    <nav class="visible-md visible-lg col-xs-12 flex justify-center items-center">
       <div class="nav flex wrap items-center justify-around col-sm-12 col-xs-12">
         <a href="" class="nav-item">JEJU BEER LIFE</a>
         <a href="" class="nav-item">EXPERIENCE</a>
@@ -51,14 +81,47 @@
         <a href="" class="nav-item">BREWERY</a>
       </div>
     </nav>
+    <nav id="side-menu"style="display:none;" class="side-menu hidden-lg hidden-md ">
+      <ul class="flex wrap col-xs-12">
+        <li><a href="">LOGIN</a></li>
+        <li><a href="">JOIN</a></li>
+        <li><a href="">RECURIT</a></li>
+        <li><a href="">양조장 예약</a></li>
+      </ul>
+      <ul class="flex wrap col-xs-12">
+        <li><a class="flex items-center " href="">JEJU BEER LIFE</a></li>
+        <li><a href="">EXPERIENCE</a></li>
+        <li><a href="">COLLABORATION</a></li>
+        <li><a href="">SHOP</a></li>
+        <li><a class="flex items-center " href="">BREWERY</a></li>
+      </ul>
+      <ul class="flex wrap col-xs-12">
+        <li><a href="">about us</a></li>
+        <li><a href="">our beers</a></li>
+        <li><a href="">news</a></li>
+      </ul>
+      <div class="flex justify-right col-xs-12 social">
+        <a class="col-xs-7" href=""><img class="col-xs-12"
+            src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png" alt="" /></a>
+        <a class="col-xs-2" href=""><img class="col-xs-12"
+            src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/5215b07b123cf.png" alt="" /></a>
+        <a class="col-xs-2" href=""><img class="col-xs-12"
+            src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/08634a2341636.png" alt="" /></a>
+        <a class="col-xs-2" href=""><img class="col-xs-12"
+            src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/29268409b8739.png" alt="" /></a>
+      </div>
+      <ul class="flex wrap col-xs-12">
+        <li><a href="">CONTACT</a></li>
+        <li><a href="">IR</a></li>
+      </ul>
+    </nav>
     <!-- hidden menu -->
-    <div class="visible-xs visible-sm">ddd</div>
   </header>
 
   <main></main>
-  <footer>
-    <section class="flex col-xs-12 hidden-xs hidden-sm justify-between items-center">
-      <div class="flex justify-between col-xs-5">
+  <footer id="footer" class="hidden-md hidden-lg">
+    <section class="flex col-xs-12justify-between items-center">
+      <div class="flex wrap  hidden-sm hidden-xs  justify-between col-xs-5">
         <a href="/main/about_us.html">ABOUT US</a>
         <a href="">OUR BEERS</a>
         <a href="/main/news.html">NEWS</a>
@@ -66,7 +129,7 @@
         <a href="">IR</a>
         <a href="">이용약관</a>
       </div>
-      <div class="flex justify-right col-xs-6 social">
+      <div class="flex justify-right col-xs-6 hidden-sm hidden-xs social">
         <a class="col-xs-7" href=""><img class="col-xs-12"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png" alt="" /></a>
         <a class="col-xs-2" href=""><img class="col-xs-12"
@@ -81,7 +144,7 @@
     <!-- 다음줄 -->
     <section class="flex wrap justify-left text-left col-xs-12">
       <div class="flex col-xs-9 line-center footer-text-item">
-        <a class="visible-sm text-left" href="">이용약관</a>
+        <a class="hidden-md hidden-lg text-left" href="">이용약관</a>
         <a style="color: rgb(0,0,0);" class="text-left" href="">개인정보 처리방침</a>
         <a class="text-left" href="">영상정보 처리방침</a>
       </div>
@@ -125,6 +188,8 @@
       </div>
     </section>
   </footer>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="/main/js/template.js"></script>
 </body>
 
 </html>

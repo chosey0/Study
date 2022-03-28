@@ -12,9 +12,8 @@
 </head>
 
 <body>
-
   <header class="flex wrap justify-center items-center header">
-    <div class="flex items-center justify-right col-xs-12 col-md-8 h-full logo-box">
+    <div class="flex items-center justify-right col-xs-12 col-md-8 logo-box">
       <h1 class="col-md-8 col-sm-4 col-xs-6">
         <a href="" class="flex items-center justify-center justify-right-md justify-left-xs"><img
             class="col-md-6 col-xs-8" src="https://cdn.imweb.me/thumbnail/20200721/408847c5dabec.png" alt="" /></a>
@@ -49,7 +48,7 @@
     </div>
     </div>
     <div
-      class="visible-md visible-lg flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full side-menu">
+      class="visible-md visible-lg flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full">
       <div class="flex justify-around wrap col-md-12 col-xs-12 h-1/2">
         <div class="flex items-center justify-center col-md-3 side-item">
           <a href="/main/login.html">LOGIN</a>
@@ -82,21 +81,21 @@
         <a href="" class="nav-item">BREWERY</a>
       </div>
     </nav>
-    <nav style="background-color: white; height: 92vh;">
-      <ul>
+    <nav id="side-menu"style="display:none;" class="side-menu hidden-lg hidden-md ">
+      <ul class="flex wrap col-xs-12">
         <li><a href="">LOGIN</a></li>
         <li><a href="">JOIN</a></li>
         <li><a href="">RECURIT</a></li>
         <li><a href="">양조장 예약</a></li>
       </ul>
-      <ul>
-        <li><a href="">JEJU BEER LIFE</a></li>
+      <ul class="flex wrap col-xs-12">
+        <li><a class="flex items-center " href="">JEJU BEER LIFE</a></li>
         <li><a href="">EXPERIENCE</a></li>
         <li><a href="">COLLABORATION</a></li>
         <li><a href="">SHOP</a></li>
-        <li><a href="">BREWERY</a></li>
+        <li><a class="flex items-center " href="">BREWERY</a></li>
       </ul>
-      <ul>
+      <ul class="flex wrap col-xs-12">
         <li><a href="">about us</a></li>
         <li><a href="">our beers</a></li>
         <li><a href="">news</a></li>
@@ -111,7 +110,7 @@
         <a class="col-xs-2" href=""><img class="col-xs-12"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/29268409b8739.png" alt="" /></a>
       </div>
-      <ul>
+      <ul class="flex wrap col-xs-12">
         <li><a href="">CONTACT</a></li>
         <li><a href="">IR</a></li>
       </ul>
@@ -120,9 +119,9 @@
   </header>
 
   <main></main>
-  <footer id="footer">
-    <section class="flex col-xs-12 hidden-xs hidden-sm justify-between items-center">
-      <div class="flex justify-between col-xs-5">
+  <footer id="footer" class="hidden-md hidden-lg">
+    <section class="flex col-xs-12justify-between items-center">
+      <div class="flex wrap  hidden-sm hidden-xs  justify-between col-xs-5">
         <a href="/main/about_us.html">ABOUT US</a>
         <a href="">OUR BEERS</a>
         <a href="/main/news.html">NEWS</a>
@@ -130,7 +129,7 @@
         <a href="">IR</a>
         <a href="">이용약관</a>
       </div>
-      <div class="flex justify-right col-xs-6 social">
+      <div class="flex justify-right col-xs-6 hidden-sm hidden-xs social">
         <a class="col-xs-7" href=""><img class="col-xs-12"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png" alt="" /></a>
         <a class="col-xs-2" href=""><img class="col-xs-12"
@@ -145,7 +144,7 @@
     <!-- 다음줄 -->
     <section class="flex wrap justify-left text-left col-xs-12">
       <div class="flex col-xs-9 line-center footer-text-item">
-        <a class="visible-sm text-left" href="">이용약관</a>
+        <a class="hidden-md hidden-lg text-left" href="">이용약관</a>
         <a style="color: rgb(0,0,0);" class="text-left" href="">개인정보 처리방침</a>
         <a class="text-left" href="">영상정보 처리방침</a>
       </div>
@@ -190,41 +189,7 @@
     </section>
   </footer>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script>
-    $('document').ready(function () {
-      var trigger = $('#menu-icon'),
-        isClosed = true;
-      var footer = $('#footer');
-      trigger.click(function () {
-        menuTime();
-        displayToggle();
-      });
-
-      function menuTime() {
-        if (isClosed == true) {
-          trigger.removeClass('is-open');
-          trigger.addClass('is-closed');
-          isClosed = false;
-        } else {
-          trigger.removeClass('is-closed');
-          trigger.addClass('is-open');
-          isClosed = true;
-        }
-      }
-
-      function displayToggle() {
-        if (isClosed == true) {
-          footer.addClass("hidden-sm");
-          footer.addClass("hidden-xs");
-          
-        } else {
-          footer.removeClass("hidden-sm");
-          footer.removeClass("hidden-xs");
-        }
-      }
-
-    });
-  </script>
+  <script src="/main/js/template.js"></script>
 </body>
 
 </html>
