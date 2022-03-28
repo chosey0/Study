@@ -1,3 +1,5 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -89,7 +91,9 @@ a {
 .info-text {
   color: white;
 }
-
+.logo-box {
+  height: 8vh;
+}
 .main-etc {
   margin: 1em 0;
   color: var(--primary-color);
@@ -148,7 +152,107 @@ a {
   background-color: rgba(255, 255, 255);
   background: center no-repeat cover;
 }
+.side-menu {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  height: 92vh;
+}
 
+.side-menu ul:nth-child(1) {
+  background-color: #1ecad3;
+  height: fit-content;
+  margin: 0;
+}
+.side-menu ul:nth-child(1) li:nth-child(1),
+.side-menu ul:nth-child(1) li:nth-child(2),
+.side-menu ul:nth-child(1) li:nth-child(3) {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.side-menu ul:nth-child(1) li:nth-child(4) {
+  position: relative;
+  margin: 0.5rem 0.5rem 0.5rem auto;
+  padding: 0.5rem;
+}
+.side-menu ul:nth-child(1) li:nth-child(4)::before {
+  content: "|";
+  font-weight: 600;
+  position: absolute;
+  color: white;
+  left: -1rem;
+}
+.side-menu ul:nth-child(1) li a {
+  color: white;
+}
+.side-menu ul:nth-child(2),
+.side-menu ul:nth-child(3),
+.side-menu div,
+.side-menu ul:nth-child(5) {
+  height: fit-content;
+  font-size: 2.1rem;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-weight: bold;
+}
+.side-menu ul:nth-child(2) li,
+.side-menu ul:nth-child(3) li {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.side-menu ul:nth-child(2) li a,
+.side-menu ul:nth-child(3) li a,
+.side-menu ul:nth-child(5) li a {
+  text-align: left;
+  margin: 0 2rem;
+}
+.side-menu ul:nth-child(2) li:nth-child(1) a::after {
+  display: inline-block;
+  content: "제주맥주 한달살기";
+  height: inherit;
+  line-height: inherit;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 0 0 0 3rem;
+}
+.side-menu ul:nth-child(2) li:nth-child(5) {
+  display: flex;
+  margin-top: 10px;
+  padding: 1rem 0;
+  border-top: solid #1ecad3 3px;
+  border-bottom: solid #1ecad3 3px;
+  width: fit-content;
+}
+.side-menu ul:nth-child(2) li:nth-child(5) a::after {
+  display: inline-block;
+  content: "양조장 투어";
+  height: inherit;
+  line-height: inherit;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 0 0 0 3rem;
+}
+.side-menu ul:nth-child(3) {
+  margin-bottom: auto;
+  padding-bottom: auto;
+}
+.side-menu div {
+  margin-top: auto;
+}
+.side-menu div a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.side-menu ul:nth-child(5) {
+  margin-bottom: 0;
+  margin-top: auto;
+  border-top: solid #1ecad3 3px;
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 /* main */
 .jumbotron {
   background: none;
@@ -199,6 +303,10 @@ a {
 }
 
 @media (min-width: 989px) {
+  .side.menu {
+    height: 92vh;
+    display: block;
+  }
   .justify-right-md {
     justify-content: right;
   }

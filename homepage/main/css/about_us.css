@@ -19,16 +19,3 @@
 .about_link a {
   color: white;
 }
-@media (max-width: 989px) {
-  .logo-box {
-    position: absolute;
-    z-index: 1000;
-    padding: 1em 1em;
-  }
-  .hidden-menu {
-    position: absolute;
-    z-index: 1000;
-    right: 0;
-    padding: 1em 1em;
-  }
-}
