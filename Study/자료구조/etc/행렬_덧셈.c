@@ -17,6 +17,7 @@ int main()
   int rand(void);
   int number;
 
+  
   // todo 배열 a와 aa를 난수로 채우고 a와 aa를 더한 배열 만들기
   for (n = 0; n < 3; n++)
   {
