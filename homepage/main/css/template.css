@@ -1,16 +1,27 @@
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-
+@import url("http://fonts.cdnfonts.com/css/gotham");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-align: center;
-
+  font-weight: 400;
+  font-family: "Gotham Light", sans-serif;
   --primary-color: #1ecad3;
   --color-gray: 199 199 199;
   --color-white: 255 255 255;
+  /* 
+  font-family: 'Gotham', sans-serif;
+  font-family: 'Gotham Black', sans-serif;
+  font-family: 'Gotham Light', sans-serif;
+  font-family: 'Gotham Thin', sans-serif;
+  font-family: 'Gotham XLight', sans-serif;
+  font-family: 'Gotham Book', sans-serif;
+  font-family: 'Gotham Ultra', sans-serif; 
+  */
 }
-
+body {
+  position: relative;
+}
 header,
 div,
 nav,
@@ -19,11 +30,8 @@ article {
   margin: 0;
   padding: 0;
 }
-li {
+nav li {
   list-style: none;
-}
-nav {
-  height: 3em;
 }
 a {
   text-decoration: none;
@@ -98,9 +106,16 @@ a {
   margin: 1em 0;
   color: var(--primary-color);
 }
-.side-item {
-  height: 3em;
-  line-height: 3em;
+.reservation {
+  height: 4rem;
+  line-height: 4rem;
+}
+.side-item:nth-child(1),
+.side-item:nth-child(2),
+.side-item:nth-child(3),
+.side-item:nth-child(4) {
+  height: 8rem;
+  line-height: 8rem;
 }
 
 .hidden-menu-list {
@@ -146,7 +161,8 @@ a {
 }
 
 .nav-item {
-  line-height: 3em;
+  height: 8rem;
+  line-height: 8rem;
 }
 .bg-white {
   background-color: rgba(255, 255, 255);
@@ -236,13 +252,16 @@ a {
   margin-bottom: auto;
   padding-bottom: auto;
 }
-.side-menu div {
+.side-menu > div {
   margin-top: auto;
 }
 .side-menu div a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.side-menu div a img {
+  width: 100%;
 }
 .side-menu ul:nth-child(5) {
   margin-bottom: 0;
@@ -345,3 +364,38 @@ footer * {
 
 /* .etc-top {
   padding: 1em 0; */
+/* side button */
+.floating-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1000;
+  flex-direction: column;
+}
+.floating-button button {
+  border-radius: 100%;
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  background-color: white;
+  margin: 0.5rem;
+}
+.floating-button button:nth-child(1) {
+  background-image: url("https://cdn.imweb.me/upload/S20200702f03eaee38b16e/2616c012b78f3.png");
+  background-position: center;
+  background-size: cover;
+}
+.floating-button button:nth-child(2) {
+  background-image: url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/images/button-share.png");
+  background-position: center;
+  background-size: cover;
+}
+.floating-button button:nth-child(3) {
+  background-image: url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/images/button-top.png");
+  background-position: center;
+  background-size: cover;
+}
