@@ -4,7 +4,7 @@ $("document").ready(function () {
   var footer = $("#footer");
   var side_menu = $("#side-menu");
   var main = $("main");
-  trigger.click(function () {
+  trigger.click(() => {
     menuTime();
     displayToggle();
   });
@@ -25,13 +25,15 @@ $("document").ready(function () {
     if (isClosed == true) {
       main.hide();
       side_menu.show();
-      footer.addClass("hidden-sm");
-      footer.addClass("hidden-xs");
+      footer.hide();
     } else {
       main.show();
       side_menu.hide();
-      footer.removeClass("hidden-sm");
-      footer.removeClass("hidden-xs");
+      footer.show();
     }
   }
+});
+
+$("#scrollTop").click(() => {
+  
 });
