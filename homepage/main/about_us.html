@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="flex wrap justify-center items-center header">
+  <header id="header" class="flex wrap col-xs-12 justify-center items-center header">
     <div class="flex items-center justify-right col-xs-12 col-md-8 logo-box">
       <h1 class="col-md-8 col-sm-4 col-xs-6">
         <a href="" class="flex items-center justify-center justify-right-md justify-left-xs"><img
@@ -101,14 +101,14 @@
         <li><a href="">our beers</a></li>
         <li><a href="">news</a></li>
       </ul>
-      <div class="flex justify-right col-xs-12 social">
+      <div class="flex justify-around col-xs-12 social">
         <a class="col-xs-7" href=""><img class="col-xs-12"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png" alt="" /></a>
-        <a class="col-xs-2" href=""><img class="col-xs-12"
+        <a class="col-xs-2" href=""><img class="col-xs-4"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/5215b07b123cf.png" alt="" /></a>
-        <a class="col-xs-2" href=""><img class="col-xs-12"
+        <a class="col-xs-2" href=""><img class="col-xs-4"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/08634a2341636.png" alt="" /></a>
-        <a class="col-xs-2" href=""><img class="col-xs-12"
+        <a class="col-xs-2" href=""><img class="col-xs-4"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/29268409b8739.png" alt="" /></a>
       </div>
       <ul class="flex wrap col-xs-12">
@@ -118,22 +118,29 @@
     </nav>
     <!-- hidden menu -->
   </header>
-
+  <div class="floating-button">
+    <button></button>
+    <button></button>
+    <button id="scrollTop"><a href="#header">dd</a></button>
+  </div>
   <main class="">
-    <div class="flex justify-center col-xs-12">
+    <div>
+      <video autoplay muted width="100%"
+        src="https://jbimweb.s3.ap-northeast-2.amazonaws.com/video/jb_aboutus_full_low.mp4"></video>
+    </div>
+    <div class="flex  justify-center col-xs-12">
       <div class="flex about_link">
-        <a href="">ABOUT US</a>
+        <a href="#about_us">ABOUT US</a>
       </div>
       <div class="flex about_link">
         <a href="">ACTIVITIES</a>
       </div>
       <div class="flex about_link">
-        <a href="">OUR TEAM</a>
+        <a href="#our_team">OUR TEAM</a>
       </div>
     </div>
     <section>
-      <article>
-
+      <article id="about_us">
         <h2>ABOUT US</h2>
         <h6>WE ARE</h6><br>
         <p>
@@ -155,47 +162,167 @@
         <img style="padding: 0;" class="col-xs-12" src="https://cdn.imweb.me/thumbnail/20200720/3fde3b2d76012.jpg"
           alt="">
       </article>
-      <section class="row">
-        <article class="col-xs-12">
-          <h6>ACCOMPLISHMENTS</h6><br>
-          <p><b>국내 최초 글로벌 크래프트 맥주사</b></p>
-          <p>미국 뉴욕 판매 1위 크래프트맥주사 브루클린 브루어리와의</p>
-          <p>아시아 첫 파트너십</p>
+      <article>
+        <h6>ACCOMPLISHMENTS</h6><br>
+        <p><b>국내 최초 글로벌 크래프트 맥주사</b></p>
+        <p>미국 뉴욕 판매 1위 크래프트맥주사 브루클린 브루어리와의</p>
+        <p>아시아 첫 파트너십</p>
 
-          <p><b>맥주업계 최초 중소벤처기업부 '예비 유니콘' 선정</b></p>
-          <b>누적 투자액 600억 돌파 (2020년 기준)</p>
-            <p>런칭 후 매년 200% 이상 매출 성장 (2020년 기준)</p>
-            <p>제주 양조장 방문객 누적 약 10만 명 (2020년 기준)</p>
-            <p>제주도의 새로운 관광 명소로 자리매김</p>
-            <p>현대카드, 배틀그라운드, 이니스프리, 하이랜드파크</p>
-            등과의 콜라보레이션</p><br>
+        <p><b>맥주업계 최초 중소벤처기업부 '예비 유니콘' 선정</b></p>
+        <b>누적 투자액 600억 돌파 (2020년 기준)</p>
+          <p>런칭 후 매년 200% 이상 매출 성장 (2020년 기준)</p>
+          <p>제주 양조장 방문객 누적 약 10만 명 (2020년 기준)</p>
+          <p>제주도의 새로운 관광 명소로 자리매김</p>
+          <p>현대카드, 배틀그라운드, 이니스프리, 하이랜드파크</p>
+          등과의 콜라보레이션</p><br>
+          </p>
+          <div class="flex col-md-6 col-xs-12 items-center">
+            <img class="col-xs-4" src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/8fce51364ce95.png" alt="">
+            <p>
+              <b>JEJU WIT ALE</b><br>
+
+              세계 3대 맥주 품평회 2018 AIBA<br>
+              국내 최초 ‘벨기에식 밀맥주’ 부분<br>
+              <b>은상 수상</b><br>
             </p>
-            <div class="flex col-md-6 col-xs-12 items-center">
-              <img class="col-xs-4" src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/8fce51364ce95.png" alt="">
-              <p>
-                <b>JEJU WIT ALE</b><br>
+          </div>
+          <div class="flex col-md-6 col-xs-12 items-center">
+            <img class=" col-xs-4" src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/8637f19ac9b95.png" alt="">
+            <p>
+              <b>JEJU WIT ALE</b><br>
 
-                세계 3대 맥주 품평회 2018 AIBA<br>
-                국내 최초 ‘벨기에식 밀맥주’ 부분<br>
-                <b>은상 수상</b><br>
-              </p>
-            </div>
-            <div class="flex col-md-6 col-xs-12 items-center">
-              <img class=" col-xs-4" src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/8637f19ac9b95.png" alt="">
-              <p>
-                <b>JEJU WIT ALE</b><br>
-
-                2019 대한민국 주류대상<br>
-                크래프트 맥주 에일 부분 <b>대상 수상</b><br>
-              </p>
-            </div>
-        </article>
-      </section>
+              2019 대한민국 주류대상<br>
+              크래프트 맥주 에일 부분 <b>대상 수상</b><br>
+            </p>
+          </div>
+          <div>
+            <img width="100%" src="https://cdn.imweb.me/thumbnail/20200720/2e31bb4b6923b.png" alt="">
+          </div>
+      </article>
+    </section>
+    <section>
+      <article>
+        <div>
+          <img src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/69a87464e7eef.png" alt="">
+        </div>
+      </article>
+      <article>
+        <div>
+          <img src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/035adc7b8f534.png" alt="">
+        </div>
+      </article>
+      <article>
+        <div>
+          <img src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/9ffd5465c015f.png" alt="">
+        </div>
+      </article>
+      <article>
+        <div>
+          <img width="100%" src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/5cf0c7ab907da.gif" alt="">
+        </div>
+      </article>
+    </section>
+    <section id="our_team">
+      <article>
+        <div>
+          <h2>OUR TEAM</h2>
+          <p>맥주만 만드는 사람들이 아닙니다.</p>
+          <p>제주의 문화를 만들어가는 다양한 매력의 우리를 만나보세요.</p>
+        </div>
+        <div class="col-xs-12 flex wrap">
+          <div class="flex wrap col-md-4 col-xs-6">
+            <img width="100%" src="https://cdn.imweb.me/thumbnail/20200717/9cfe449c420fd.jpg" alt="">
+            <span>
+              <b>홈 가든 피크닉</b>
+              <p>김대현 / 영업</p>
+            </span>
+          </div>
+          <div class="flex wrap col-md-4 col-xs-6">
+            <img width="100%"
+              src="https://cdn.imweb.me/thumbnail/20200717/2201d9c11488d.png" alt="">
+              <span>
+              <b>바람길 따라 라이딩</b>
+              <p>김준구 / 생산</p>
+            </span>
+          </div>
+          <div class="flex wrap col-md-4 col-xs-6">
+            <img width="100%"
+              src="https://cdn.imweb.me/thumbnail/20200717/81caeb8a3707e.png" alt="">
+              <span>
+              <b>독서는 나의 힘</b>
+              <p>최봉서 / 영업</p>
+            </span>
+          </div>
+          <div class="flex wrap col-md-4 col-xs-6">
+            <img width="100%" src="https://cdn.imweb.me/thumbnail/20200717/2ef21b51c0fc3.png" alt="">
+            <span>
+              <b>온 더 로드</b>
+              <p>최일규 / 생산</p>
+            </span>
+          </div>
+          <div class="flex wrap col-md-4 col-xs-6">
+            <img width="100%" src="https://cdn.imweb.me/thumbnail/20200717/62da77b6c7446.png" alt="">
+            <span>
+              <b>빵이냐 맥주냐 그것이 문제로다</b>
+              <p>오재원 / 마케팅</p>
+            </span>
+          </div>
+          <div class="flex wrap col-md-4 col-xs-6">
+            <img width="100%" src="https://cdn.imweb.me/thumbnail/20200717/3e97619b0af85.png" alt="">
+            <span>
+              <b>맥주의 안주는 브금</b>
+              <p>김도윤 / 영업</p>
+            </span>
+          </div>
+          <div class="flex wrap col-md-4 col-xs-6">
+            <img width="100%" src="" alt="">
+            <span>
+              <b></b>
+              <p></p>
+            </span>
+          </div>
+          <div class="flex wrap col-md-4 col-xs-6">
+            <img width="100%" src="" alt="">
+            <span>
+              <b></b>
+              <p></p>
+            </span>
+          </div>
+          <div class="flex wrap col-md-4 col-xs-6">
+            <img width="100%" src="" alt="">
+            <span>
+              <b></b>
+              <p></p>
+            </span>
+          </div>
+          <div class="flex wrap col-md-4 col-xs-6">
+            <img width="100%" src="" alt="">
+            <span>
+              <b></b>
+              <p></p>
+            </span>
+          </div>
+          <div class="flex wrap col-md-4 col-xs-6">
+            <img width="100%" src="" alt="">
+            <span>
+              <b></b>
+              <p></p>
+            </span>
+          </div>
+          <div class="flex wrap col-md-4 col-xs-6">
+            <img width="100%" src="" alt="">
+            <span>
+              <b></b>
+              <p></p>
+            </span>
+          </div>
+        </div>
+      </article>
     </section>
     <hr>
   </main>
-  <footer id="footer" class="hidden-md hidden-lg">
-    <section class="flex col-xs-12justify-between items-center">
+  <footer id="footer" class="">
+    <section class="flex col-xs-12 justify-between items-center">
       <div class="flex wrap  hidden-sm hidden-xs  justify-between col-xs-5">
         <a href="/main/about_us.html">ABOUT US</a>
         <a href="">OUR BEERS</a>
@@ -204,7 +331,7 @@
         <a href="">IR</a>
         <a href="">이용약관</a>
       </div>
-      <div class="flex justify-right col-xs-6 hidden-sm hidden-xs social">
+      <div class="flex justify-right col-xs-5 hidden-sm hidden-xs social">
         <a class="col-xs-7" href=""><img class="col-xs-12"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png" alt="" /></a>
         <a class="col-xs-2" href=""><img class="col-xs-12"

@@ -1,0 +1,46 @@
+input[type="checkbox"] {
+  margin: 0 1rem 0 0;
+  height: 3rem;
+}
+label b {
+  font-family: "Gotham Light", sans-serif;
+  color: #f54;
+}
+label {
+  font-family: "Gotham Light", sans-serif;
+  height: 3rem;
+  line-height: 3rem;
+}
+textarea:focus {
+  outline: none;
+}
+textarea {
+  resize: none;
+  padding: 1.5rem 0 0 0;
+  font-family: "Gotham Light", sans-serif;
+  font-size: 1.3rem;
+  text-align: left;
+  margin: 0 0 3rem 0;
+  border: 1px solid #bbb;
+}
+form {
+  margin: 0 0 10rem 0;
+}
+form div {
+  padding: 0;
+}
+.area-title {
+  padding: 0;
+}
+form button {
+  height: 1;
+  height: 5rem;
+  width: 10rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+button[type="submit"] {
+  border: none;
+  color: white;
+  background-color: var(--primary-color);
+}

@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/template.css" />
   <link rel="stylesheet" href="./css/menu-icon.css" />
+  <link rel="stylesheet" href="./css/shop.css">
 </head>
 
 <body>
-  <header class="flex wrap justify-center items-center header">
+  <header class="flex wrap col-xs-12 justify-center items-center header">
     <div class="flex items-center justify-right col-xs-12 col-md-8 logo-box">
       <h1 class="col-md-8 col-sm-4 col-xs-6">
         <a href="" class="flex items-center justify-center justify-right-md justify-left-xs"><img
@@ -47,8 +48,7 @@
 
     </div>
     </div>
-    <div
-      class="visible-md visible-lg flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full">
+    <div class="visible-md visible-lg flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full">
       <div class="flex justify-around wrap col-md-12 col-xs-12 h-1/2">
         <div class="flex items-center justify-center col-md-3 side-item">
           <a href="/main/login.html">LOGIN</a>
@@ -81,7 +81,7 @@
         <a href="" class="nav-item">BREWERY</a>
       </div>
     </nav>
-    <nav id="side-menu"style="display:none;" class="side-menu hidden-lg hidden-md ">
+    <nav id="side-menu" style="display:none;" class="side-menu hidden-lg hidden-md ">
       <ul class="flex wrap col-xs-12">
         <li><a href="">LOGIN</a></li>
         <li><a href="">JOIN</a></li>
@@ -100,14 +100,14 @@
         <li><a href="">our beers</a></li>
         <li><a href="">news</a></li>
       </ul>
-      <div class="flex justify-right col-xs-12 social">
+      <div class="flex justify-around col-xs-12 social">
         <a class="col-xs-7" href=""><img class="col-xs-12"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png" alt="" /></a>
-        <a class="col-xs-2" href=""><img class="col-xs-12"
+        <a class="col-xs-2" href=""><img class="col-xs-4"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/5215b07b123cf.png" alt="" /></a>
-        <a class="col-xs-2" href=""><img class="col-xs-12"
+        <a class="col-xs-2" href=""><img class="col-xs-4"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/08634a2341636.png" alt="" /></a>
-        <a class="col-xs-2" href=""><img class="col-xs-12"
+        <a class="col-xs-2" href=""><img class="col-xs-4"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/29268409b8739.png" alt="" /></a>
       </div>
       <ul class="flex wrap col-xs-12">
@@ -117,10 +117,48 @@
     </nav>
     <!-- hidden menu -->
   </header>
+  <div class="floating-button">
+    <button></button>
+    <button></button>
+    <button id="scrollTop"></button>
+  </div>
+  <main>
+    <section>
+      <div class="product no-pd col-xs-12 col-sm-6">
+        <p>CRISPY LAVAR SNACK</p>
+        <p>제주에서 만난 찹쌀 김부각(4ea)</p>
+        <p><b>₩ 12,100원</b></p>
+        <input class="no-pd col-xs-12" type="image" href=""
+          src="https://cdn.imweb.me/thumbnail/20210826/96d8d6d8898c8.jpg" alt="">
+      </div>
+      <div class="product no-pd col-xs-12 col-sm-6">
+        <p>JEJU BEER PLAYING CARD</p>
+        <p>제주맥주 조약돌 화투</p>
+        <p><b>₩ 8,800원</b></p>
+        <input class="no-pd col-xs-12 col-sm-6" type="image" href=""
+          src="https://cdn.imweb.me/thumbnail/20210826/f364741e03662.jpg" alt="">
+      </div>
+      <div class="product no-pd col-xs-12 col-sm-6">
+        <p>JEJU BEER GARNISH</p>
+        <p>제주를 담은 감귤칩(20ea)</p>
+        <p><b>₩ 11,000원</b></p>
+        <input class="no-pd col-xs-12 col-sm-6" type="image" href=""
+          src="https://cdn.imweb.me/thumbnail/20200825/cbe28b9cb6bc0.png" alt="">
+      </div>
+      <div class="product no-pd col-xs-12 col-sm-6">
+        <p>JEJU BEER GLASS</p>
+        <p>제주맥주 전용잔 370 mL</p>
+        <p><b>₩ 5,500원</b></p>
+        <input class="no-pd col-xs-12 col-sm-6" type="image" href=""
+          src="https://cdn.imweb.me/thumbnail/20200825/b8fcf45534235.jpg" alt="">
+      </div>  
+    </section>
+    <div class="col-xs-12 coming-soon">MORE COMING SOON</div>
+    
 
-  <main></main>
-  <footer id="footer" class="hidden-md hidden-lg">
-    <section class="flex col-xs-12justify-between items-center">
+  </main>
+  <footer id="footer" class="">
+    <section class="flex col-xs-12 justify-between items-center">
       <div class="flex wrap  hidden-sm hidden-xs  justify-between col-xs-5">
         <a href="/main/about_us.html">ABOUT US</a>
         <a href="">OUR BEERS</a>
@@ -129,7 +167,7 @@
         <a href="">IR</a>
         <a href="">이용약관</a>
       </div>
-      <div class="flex justify-right col-xs-6 hidden-sm hidden-xs social">
+      <div class="flex justify-right col-xs-5 hidden-sm hidden-xs social">
         <a class="col-xs-7" href=""><img class="col-xs-12"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png" alt="" /></a>
         <a class="col-xs-2" href=""><img class="col-xs-12"

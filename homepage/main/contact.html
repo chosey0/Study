@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/template.css" />
   <link rel="stylesheet" href="./css/menu-icon.css" />
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
 </head>
 
 <body>
-  <header class="flex wrap justify-center items-center header">
+  <header class="flex wrap col-xs-12 justify-center items-center header">
     <div class="flex items-center justify-right col-xs-12 col-md-8 logo-box">
       <h1 class="col-md-8 col-sm-4 col-xs-6">
         <a href="" class="flex items-center justify-center justify-right-md justify-left-xs"><img
@@ -47,8 +48,7 @@
 
     </div>
     </div>
-    <div
-      class="visible-md visible-lg flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full">
+    <div class="visible-md visible-lg flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full">
       <div class="flex justify-around wrap col-md-12 col-xs-12 h-1/2">
         <div class="flex items-center justify-center col-md-3 side-item">
           <a href="/main/login.html">LOGIN</a>
@@ -81,7 +81,7 @@
         <a href="" class="nav-item">BREWERY</a>
       </div>
     </nav>
-    <nav id="side-menu"style="display:none;" class="side-menu hidden-lg hidden-md ">
+    <nav id="side-menu" style="display:none;" class="side-menu hidden-lg hidden-md ">
       <ul class="flex wrap col-xs-12">
         <li><a href="">LOGIN</a></li>
         <li><a href="">JOIN</a></li>
@@ -100,14 +100,14 @@
         <li><a href="">our beers</a></li>
         <li><a href="">news</a></li>
       </ul>
-      <div class="flex justify-right col-xs-12 social">
+      <div class="flex justify-around col-xs-12 social">
         <a class="col-xs-7" href=""><img class="col-xs-12"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png" alt="" /></a>
-        <a class="col-xs-2" href=""><img class="col-xs-12"
+        <a class="col-xs-2" href=""><img class="col-xs-4"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/5215b07b123cf.png" alt="" /></a>
-        <a class="col-xs-2" href=""><img class="col-xs-12"
+        <a class="col-xs-2" href=""><img class="col-xs-4"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/08634a2341636.png" alt="" /></a>
-        <a class="col-xs-2" href=""><img class="col-xs-12"
+        <a class="col-xs-2" href=""><img class="col-xs-4"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/29268409b8739.png" alt="" /></a>
       </div>
       <ul class="flex wrap col-xs-12">
@@ -117,10 +117,38 @@
     </nav>
     <!-- hidden menu -->
   </header>
+  <div class="floating-button">
+    <button></button>
+    <button></button>
+    <button id="scrollTop"></button>
+  </div>
+  
+  <main>
+    <section>
+      <article>
+        <h2>CONTACT</h2>
+        <p>
+          주소 : 제주시 한림읍 금능농공길 62-11</p>
+          <p>투어 문의 : 064-798-9872</p>
+          <p>양조장 운영일 : 매일 (부정기 휴일의 경우, 공지사항 참고)</p>
+          <p>양조장 운영 시간 : 12:30 - 19:30 (펍 오픈 13:00 / 마감 19:00)</p>
+          <p>납품 & 대표 문의 : 064-798-9800 / jejubeer@jejubeer.co.kr</p>
+          <p>채용 문의 : recruit@jejubeer.co.kr</p>
+          <p>IR 문의 : 02-2235-5559</p>
+      </article>
+    </section>
+    <section class="col-xs-12">
+      <article class="flex justify-center col-xs-12">
+        <div class="flex justify-center"id="map" style="width:100%;height:400px;"></div>
 
-  <main></main>
-  <footer id="footer" class="hidden-md hidden-lg">
-    <section class="flex col-xs-12justify-between items-center">
+      </article>
+    </section>
+    
+    
+  </main>
+
+  <footer id="footer" class="">
+    <section class="flex col-xs-12 justify-between items-center">
       <div class="flex wrap  hidden-sm hidden-xs  justify-between col-xs-5">
         <a href="/main/about_us.html">ABOUT US</a>
         <a href="">OUR BEERS</a>
@@ -129,7 +157,7 @@
         <a href="">IR</a>
         <a href="">이용약관</a>
       </div>
-      <div class="flex justify-right col-xs-6 hidden-sm hidden-xs social">
+      <div class="flex justify-right col-xs-5 hidden-sm hidden-xs social">
         <a class="col-xs-7" href=""><img class="col-xs-12"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png" alt="" /></a>
         <a class="col-xs-2" href=""><img class="col-xs-12"
@@ -190,6 +218,14 @@
   </footer>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="/main/js/template.js"></script>
+  <script>
+    var mapOptions = {
+        center: new naver.maps.LatLng(37.3595704, 127.105399),
+        zoom: 10
+    };
+    
+    var map = new naver.maps.Map('map', mapOptions);
+    </script>
 </body>
 
 </html>

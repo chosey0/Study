@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+</head>
+
+<body>
+  <form action="" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>상품 선택</legend>
+      <h4>주문할 상품을 선택해 주세요.</h4>
+      <label for=""><input type="checkbox" name="1" id="" checked />선물용 3kg</label>
+      <label for=""><input type="checkbox" name="2" id="" />선물용 5kg</label>
+      <label for=""><input type="checkbox" name="3" id="" />가정용 3kg</label>
+      <label for=""><input type="checkbox" name="4" id="" />가정용 5kg</label>
+      <h4>주문할 상품을 선택해 주세요.</h4>
+      <label for=""><input type="radio" name="gift" id="" />선물 포장</label>
+      <label for=""><input type="radio" name="gift" id="" />선물 포장 안함</label>
+    </fieldset>
+    <fieldset>
+      <legend>상품 선택</legend>
+      <ul>
+        <li><label for=""><input type="checkbox" name="" id="">선물용 3kg</label>
+          <input type="number" name="" id="">개 (최대 5개)
+        </li>
+        <li>
+          <label for=""><input type="checkbox" name="" id="">선물용 5kg</label>
+          <input type="range" name="" id="">개 (최대 3개)
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>배송 정보</legend>
+      <ul>
+        <li>
+          <label for="username">이름</label>
+          <input type="text" name="" id="username">
+        </li>
+        <li>
+          <label for="address">배송 주소</label>
+          <input type="text" name="" id="address">
+        </li>
+        <li>
+          <label for="email">이메일 주소</label>
+          <input type="email" name="" id="email">
+        </li>
+        <li>
+          <label for="phone">연락처</label>
+          <input type="tel" name="" id="phone">
+        </li>
+        <li>
+          <label for="homepage">홈페이지</label>
+          <input type="url" name="" id="homepage">
+        </li>
+        <li>
+          <label for="date">배송지 ( 주문일로부터 최소 3일 이후 )</label>
+          <input type="date" min="2022-04-01"name="" id="date">
+        </li>
+      </ul>
+      <input type="submit" value="주문하기">
+      <input type="reset" value="취소하기">
+      <input type="image" src="" alt="">
+      <input type="button" value="">
+    </fieldset>
+    <fieldset>
+      <legend>반품 정보</legend>
+      <p>만일 수령한 상품에 문제가 있다면 즉시 반품 신청해 주세요.</p>
+      <p>반품 신청시 상품의 상태를 사진으로 첨부해 주세요.</p>
+      <hr>
+      <input type="file" name="" id="">
+    </fieldset>
+  </form>
+</body>
+
+</html>

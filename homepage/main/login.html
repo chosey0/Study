@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/template.css" />
   <link rel="stylesheet" href="./css/menu-icon.css" />
+  <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
-  <header class="flex wrap justify-center items-center header">
+  <header class="flex wrap col-xs-12 justify-center items-center header">
     <div class="flex items-center justify-right col-xs-12 col-md-8 logo-box">
       <h1 class="col-md-8 col-sm-4 col-xs-6">
         <a href="" class="flex items-center justify-center justify-right-md justify-left-xs"><img
@@ -47,8 +48,7 @@
 
     </div>
     </div>
-    <div
-      class="visible-md visible-lg flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full">
+    <div class="visible-md visible-lg flex wrap items-center justify-center col-md-4 col-sm-12 col-xs-12 h-full">
       <div class="flex justify-around wrap col-md-12 col-xs-12 h-1/2">
         <div class="flex items-center justify-center col-md-3 side-item">
           <a href="/main/login.html">LOGIN</a>
@@ -81,7 +81,7 @@
         <a href="" class="nav-item">BREWERY</a>
       </div>
     </nav>
-    <nav id="side-menu"style="display:none;" class="side-menu hidden-lg hidden-md ">
+    <nav id="side-menu" style="display:none;" class="side-menu hidden-lg hidden-md ">
       <ul class="flex wrap col-xs-12">
         <li><a href="">LOGIN</a></li>
         <li><a href="">JOIN</a></li>
@@ -100,14 +100,14 @@
         <li><a href="">our beers</a></li>
         <li><a href="">news</a></li>
       </ul>
-      <div class="flex justify-right col-xs-12 social">
+      <div class="flex justify-around col-xs-12 social">
         <a class="col-xs-7" href=""><img class="col-xs-12"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png" alt="" /></a>
-        <a class="col-xs-2" href=""><img class="col-xs-12"
+        <a class="col-xs-2" href=""><img class="col-xs-4"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/5215b07b123cf.png" alt="" /></a>
-        <a class="col-xs-2" href=""><img class="col-xs-12"
+        <a class="col-xs-2" href=""><img class="col-xs-4"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/08634a2341636.png" alt="" /></a>
-        <a class="col-xs-2" href=""><img class="col-xs-12"
+        <a class="col-xs-2" href=""><img class="col-xs-4"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/29268409b8739.png" alt="" /></a>
       </div>
       <ul class="flex wrap col-xs-12">
@@ -117,10 +117,53 @@
     </nav>
     <!-- hidden menu -->
   </header>
-
-  <main></main>
-  <footer id="footer" class="hidden-md hidden-lg">
-    <section class="flex col-xs-12justify-between items-center">
+  <div class="floating-button">
+    <button></button>
+    <button></button>
+    <button id="scrollTop"></button>
+  </div>
+  <main class="col-xs-12 flex wrap justify-center">
+    <h1 class="col-xs-12">LOGIN</h1>
+    <form action="" class="flex wrap  col-xs-12 col-sm-6 justify-center">
+      <input class="col-xs-12 login" type="email" name="" id="" placeholder="이메일">
+      <input class="col-xs-12 login" type="password" name="" id="" placeholder="비밀번호">
+      <div class="keep-info flex items-center">
+        <input type="checkbox" name="" id="check-box">
+        <label for="check-box" class="flex justify-center check-label">
+          <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 45" fill="#fff">
+            <path
+              d="M0 11.386l1.17-1.206c1.951.522 5.313 1.731 8.33 3.597 3.175-4.177 9.582-9.398 13.456-11.777l1.044 1.073-14 18.927-10-10.614z" />
+            </svg>
+        </label>
+        <label for="check-box">로그인 상태 유지</label>
+      </div>
+      </div>
+      <input class="col-xs-12" type="submit" value="로그인">
+      <div class="findBox flex wrap justify-between">
+        <div class="">
+          <a href="">회원가입</a>
+        </div>
+        <div class="col-xs-8 flex justify-right">
+          <a class="findId" href="">아이디</a>
+          <a class="findId" href="">비밀번호 찾기</a>
+        </div>
+      </div>
+      <div class="col-xs-12 diff-login-box">
+        <p class="col-xs-12 flex justify-between items-center or">or</p>
+      </div>
+      <div class="col-xs-12 diff-login-box ">
+        <button class="kakao-login">카카오로 시작하기</button>
+      </div>
+      <div class="col-xs-12 diff-login-box ">
+        <p class="col-xs-12 flex justify-between items-center or">or</p>
+      </div>
+      <div class="col-xs-12 diff-login-box ">
+        <button class="non-login">비회원 주문 조회</button>
+      </div>
+    </form>
+  </main>
+  <footer id="footer" class="">
+    <section class="flex col-xs-12 justify-between items-center">
       <div class="flex wrap  hidden-sm hidden-xs  justify-between col-xs-5">
         <a href="/main/about_us.html">ABOUT US</a>
         <a href="">OUR BEERS</a>
@@ -129,7 +172,7 @@
         <a href="">IR</a>
         <a href="">이용약관</a>
       </div>
-      <div class="flex justify-right col-xs-6 hidden-sm hidden-xs social">
+      <div class="flex justify-right col-xs-5 hidden-sm hidden-xs social">
         <a class="col-xs-7" href=""><img class="col-xs-12"
             src="https://cdn.imweb.me/upload/S20200702f03eaee38b16e/f553848b58e03.png" alt="" /></a>
         <a class="col-xs-2" href=""><img class="col-xs-12"

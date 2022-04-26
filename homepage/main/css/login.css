@@ -1,0 +1,140 @@
+form input {
+  width: 80%;
+  border-radius: 0;
+  border: 1px solid #ccc;
+}
+
+input[type="email"],
+input[type="password"] {
+  text-align: left;
+}
+
+input[type="email"] {
+  border-bottom: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+form a,
+form p {
+  height: 5rem;
+  line-height: 5rem;
+}
+
+form > * {
+  height: 5rem;
+}
+
+form {
+  margin: 5rem 0;
+}
+
+.findBox a {
+  color: #aaa;
+}
+
+.findId {
+  width: fit-content;
+  margin: 0;
+}
+
+.findBox {
+  width: 100%;
+}
+
+.keep-info {
+  width: 100%;
+}
+
+.keep-info .check-label {
+  margin: 0 1rem 0 0;
+  display: flex;
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+}
+
+.keep-info label {
+  text-align: center;
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.check-icon {
+  display: none;
+}
+
+#check-box + .check-label {
+  overflow: hidden;
+}
+
+#check-box:checked + .check-label > .check-icon {
+  display: block;
+  background-color: #1ecfff;
+  color: #1ecad3;
+}
+
+label {
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+}
+
+.keep-info .check-label::after {
+  content: "\f012";
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+form input[type="submit"] {
+  background-color: #1ecad3;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.diff-login-box {
+  padding: 0;
+}
+
+.diff-login-box p {
+  padding: 0;
+}
+
+.diff-login-box p::before {
+  content: "";
+  width: 40%;
+  border: 1px solid #ddd;
+}
+
+.diff-login-box p::after {
+  content: "";
+  width: 40%;
+  border: 1px solid #ddd;
+}
+
+.kakao-login,
+.non-login {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.kakao-login {
+  color: rgb(56, 31, 31);
+  background-color: rgb(252, 236, 79);
+}
+.non-login {
+  background-color: rgb(134, 146, 165);
+  color: white;
+}

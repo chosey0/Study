@@ -1,26 +1,30 @@
 @import url("http://fonts.cdnfonts.com/css/gotham");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-align: center;
   font-weight: 400;
-  font-family: "Gotham Light", sans-serif;
   --primary-color: #1ecad3;
   --color-gray: 199 199 199;
   --color-white: 255 255 255;
-  /* 
-  font-family: 'Gotham', sans-serif;
-  font-family: 'Gotham Black', sans-serif;
-  font-family: 'Gotham Light', sans-serif;
-  font-family: 'Gotham Thin', sans-serif;
-  font-family: 'Gotham XLight', sans-serif;
-  font-family: 'Gotham Book', sans-serif;
-  font-family: 'Gotham Ultra', sans-serif; 
-  */
+
+  font-family: "Gotham", sans-serif, "Gotham Black", sans-serif;
+  /* --font-bold: "Gotham Black", sans-serif;
+  --font-light: "Gotham Light", sans-serif;
+  --font-thin: "Gotham Thin", sans-serif;
+  font-family: "Gotham XLight", sans-serif;
+  font-family: "Gotham Book", sans-serif;
+  --font-ultra: "Gotham Ultra", sans-serif; */
+}
+*::selection {
+  color: white;
+  background-color: var(--primary-color);
 }
 body {
   position: relative;
+  font-family: "Gotham", sans-serif;
 }
 header,
 div,
@@ -30,6 +34,12 @@ article {
   margin: 0;
   padding: 0;
 }
+h1,
+h2,
+h3 {
+  font-family: "Gotham Black", sans-serif;
+  color: var(--primary-color);
+}
 nav li {
   list-style: none;
 }
@@ -38,7 +48,9 @@ a {
   color: black;
   display: block;
 }
-
+b {
+  font-family: "Gotham Black", sans-serif;
+}
 .row {
   margin: 0;
 }
@@ -106,10 +118,6 @@ a {
   margin: 1em 0;
   color: var(--primary-color);
 }
-.reservation {
-  height: 4rem;
-  line-height: 4rem;
-}
 .side-item:nth-child(1),
 .side-item:nth-child(2),
 .side-item:nth-child(3),
@@ -117,7 +125,14 @@ a {
   height: 8rem;
   line-height: 8rem;
 }
-
+.side-item a:hover {
+  text-decoration: none;
+  transition: 0.5s;
+  color: #bbb;
+}
+.reservation:hover {
+  color: #fff;
+}
 .hidden-menu-list {
   font-size: 0.8em;
   display: block;
@@ -152,17 +167,22 @@ a {
 
 .reservation {
   display: block;
-
-  height: 3em;
-  line-height: 3em;
+  height: 3.5em;
+  line-height: 3.5em;
 
   background-color: var(--primary-color);
   color: rgba(var(--color-white));
 }
 
 .nav-item {
-  height: 8rem;
-  line-height: 8rem;
+  height: 6rem;
+  line-height: 6rem;
+  transition: 0.5s;
+}
+.nav-item:hover {
+  text-decoration: none;
+  color: #bbb;
+  transition: 0.5s;
 }
 .bg-white {
   background-color: rgba(255, 255, 255);
@@ -398,4 +418,7 @@ footer * {
   background-image: url("https://jbimweb.s3.ap-northeast-2.amazonaws.com/resource/images/button-top.png");
   background-position: center;
   background-size: cover;
+}
+.no-pd {
+  padding: 0;
 }
